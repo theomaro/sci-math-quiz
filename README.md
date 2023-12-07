@@ -1,9 +1,20 @@
-# Svelte Template
+# SciMathQ
 
-- Clone the template
+A web-based quiz application to prepare science and mathematics students for final exam.
+
+## Preview
+
+![](screenshot.png)
+
+Live [Demo](https://sci-math-quiz.vercel.app/)
+
+## Testing
+
+- Clone the project
 
 ```npm
-cd svelte-template
+git clone https://github.com/theomaro/sci-math-quiz.git
+cd sci-math-quiz
 ```
 
 - Install packages
@@ -12,12 +23,8 @@ cd svelte-template
 npm install
 ```
 
-- 
-```npx
-npx tailwindcss init -p 
-```
+- Starta development server
 
--
 ```npm
-npm run dev 
+npm run dev
 ```
