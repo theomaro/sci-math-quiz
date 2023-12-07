@@ -15,6 +15,26 @@ declare global {
     imageUrl: string;
     chapters: Chapter[];
   }
+
+  interface Chapter {
+    id: number;
+    title: string;
+    questions: Question[];
+  }
+
+  interface Question {
+    id: number;
+    text: string;
+    answer: string;
+
+    options: Option[];
+  }
+
+  interface Option {
+    id: string;
+    label: string;
+    text: string;
+  }
 }
 
 export {};
