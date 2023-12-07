@@ -1,5 +1,6 @@
 <script lang="ts">
   import "../app.css";
+  import Nav from "../components/ui/Nav.svelte";
 </script>
 
 <svelte:head>
@@ -9,4 +10,10 @@
   />
 </svelte:head>
 
-<slot />
+<header class="shadow-lg relative">
+  <Nav />
+</header>
+
+<div class="bg-gray-100 h-screen">
+  <slot />
+</div>
