@@ -49,7 +49,7 @@
   <a href="/" class="text-emerald-800 font-bold p-2 flex items-center">
     <img
       src={logoUrl}
-      alt="brand logo"
+      alt=""
       class="object-cover w-5"
     />&nbsp;Sci<span class="text-stone-700 underline font-medium">Math</span
     >Q</a
