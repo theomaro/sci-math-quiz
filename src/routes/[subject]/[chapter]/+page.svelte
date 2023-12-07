@@ -4,14 +4,17 @@
   import ProgressBar from "./components/ProgressBar.svelte";
   import QuestionText from "./components/QuestionText.svelte";
 
-  export let data: Chapter;
+  export let data: {
+    chapter: Chapter;
+    params: { subject: string; chapter: string };
+  };
 
   let currentQuestionIndex: number = 0;
-  let totalQuestions: number = data.questions.length;
+  let totalQuestions: number = data.chapter.questions.length;
   let showNextQuestion: boolean = true;
   let showPrevQuestion: boolean = false;
 
-  $: question = data.questions[currentQuestionIndex];
+  $: question = data.chapter.questions[currentQuestionIndex];
 
   function handleNext() {
     currentQuestionIndex++;
@@ -28,7 +31,7 @@
   }
 
   function handleSubmit() {
-    goto("/results");
+    goto(`/${data.params.subject}/${data.params.chapter}/results`);
   }
 
   function handleSelectedOption(label: string): void {
@@ -37,7 +40,7 @@
 </script>
 
 <svelte:head>
-  <title>{data.title.toUpperCase()}</title>
+  <title>{data.chapter.title.toUpperCase()}</title>
 </svelte:head>
 
 <section class="quizzes-container p-8 max-w-3xl mx-auto flex flex-col">
