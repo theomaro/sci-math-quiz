@@ -1,0 +1,188 @@
+{
+  "quizzes": [
+    {
+      "id": "4c77d704-16d9-2131-e1c8-4f6005551bba",
+      "code": "031",
+      "name": "physics",
+      "imageUrl": "https://unfoldanswers.com/wp-content/uploads/2020/06/Amazing-Physics-Factsn-That-will-Shock-You.jpg",
+
+      "chapters": [
+        {
+          "id": "1",
+          "title": "waves",
+
+          "questions": []
+        },
+        {
+          "id": "2",
+          "title": "electromagnetism",
+
+          "questions": []
+        }
+      ]
+    },
+
+    {
+      "id": "0158433f-be29-a4ef-ce7c-93593d774fa7",
+      "code": "032",
+      "name": "biology",
+      "imageUrl": "https://i.ytimg.com/vi/J4sKWEt5OwI/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLC6JrgMI5kqyYzyi_62Fff9YHzT4g",
+
+      "chapters": [
+        {
+          "id": "1",
+          "title": "growth",
+
+          "questions": []
+        },
+        {
+          "id": "2",
+          "title": "genetics",
+
+          "questions": []
+        }
+      ]
+    },
+
+    {
+      "id": "20ba8313-3781-4508-9f30-b055c90f5a24",
+      "code": "033",
+      "name": "chemistry",
+      "imageUrl": "https://researchmethod.net/wp-content/uploads/2022/09/What_is_Chemistry-1024x576.jpg",
+
+      "chapters": [
+        {
+          "id": "1",
+          "title": "non metals and their compounds",
+
+          "questions": []
+        },
+        {
+          "id": "2",
+          "title": "organic chemistry",
+
+          "questions": [
+            {
+              "id": "9afbbbcf-fe68-3cac-ee9c-cc0370a72535",
+              "text": " Which of the following is the simplest member of organic compounds?",
+              "answer": "c",
+              "options": [
+                {
+                  "id": "5ff7c29a-4b34-7267-d3dc-f6238a50a822",
+                  "label": "a",
+                  "text": "Formic acid"
+                },
+                {
+                  "id": "aaeac8ed-3c8d-59c3-91ec-112291eab307",
+                  "label": "b",
+                  "text": "Formaldehyde"
+                },
+                {
+                  "id": "697394e1-fbee-da99-5f19-c57e1395e2ff",
+                  "label": "c",
+                  "text": "Methane"
+                },
+                {
+                  "id": "e74c4f18-6ca5-2793-0718-97c31cfb5053",
+                  "label": "d",
+                  "text": "Methanol"
+                }
+              ],
+              "notes": "Methane is the simplest member of the alkane family and indeed the simplest of organic compounds, as all other compounds are derived by altering this compound.",
+              "createAt": "1979-02-24T01:56:56.0Z",
+              "modifiedAt": "1975-09-19T01:52:29.0Z"
+            },
+            {
+              "id": "efeda7d5-2b80-b072-87b2-ad3f59948049",
+              "text": "Which of the following is yielded when Ethylene glycol is treated with phosphorus tri-iodide?",
+              "answer": "a",
+              "options": [
+                {
+                  "id": "3d0fd897-6b64-3092-7c95-4db9fba48ff7",
+                  "label": "a",
+                  "text": "ethylene di-iodide"
+                },
+                {
+                  "id": "b65f94e9-d9fa-c1f0-9f9c-38a939224756",
+                  "label": "b",
+                  "text": "ethylene"
+                },
+                {
+                  "id": "9b8693d3-1b04-4971-6990-7538c42f2d9a",
+                  "label": "c",
+                  "text": "ethane"
+                },
+                {
+                  "id": "edd4540b-0b85-cd94-130a-f2f296764d1f",
+                  "label": "d",
+                  "text": "ethyl iodide"
+                }
+              ],
+              "notes": "Phosphorus triiodide (PI3) is an unstable red solid which reacts violently with water. It is a common misconception that PI3 is too unstable to be stored; it is, in fact, commercially available. It is widely used in organic chemistry for converting alcohols to alkyl iodides. ",
+              "createAt": "1952-03-24T18:22:51.0Z",
+              "modifiedAt": "1977-05-27T14:25:33.0Z"
+            },
+            {
+              "id": "efeda7d5-2b80-b072-87b2-ad3f59948049",
+              "text": "Hydrocarbons are organic compounds with element __________",
+              "answer": "a",
+              "options": [
+                {
+                  "id": "3d0fd897-6b64-3092-7c95-4db9fba48ff7",
+                  "label": "a",
+                  "text": "Both hydrogen and carbon"
+                },
+                {
+                  "id": "b65f94e9-d9fa-c1f0-9f9c-38a939224756",
+                  "label": "b",
+                  "text": "Carbon"
+                },
+                {
+                  "id": "9b8693d3-1b04-4971-6990-7538c42f2d9a",
+                  "label": "c",
+                  "text": "Hydrogen"
+                },
+                {
+                  "id": "edd4540b-0b85-cd94-130a-f2f296764d1f",
+                  "label": "d",
+                  "text": "Oxygen"
+                }
+              ],
+              "notes": "These organic compounds are made up of only carbon and hydrogen and hence the name hydrocarbons.",
+              "createAt": "1952-03-24T18:22:51.0Z",
+              "modifiedAt": "1977-05-27T14:25:33.0Z"
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "title": "soil chemistry",
+
+          "questions": []
+        }
+      ]
+    },
+
+    {
+      "id": "81ddc388-3b01-6d0d-a93e-b5bc04c71c25",
+      "code": "041",
+      "name": "basic mathematics",
+      "imageUrl": "https://www.kdnuggets.com/wp-content/uploads/math-chalkboard-header-scaled.jpg",
+
+      "chapters": [
+        {
+          "id": "1",
+          "title": "coordinate geometry",
+
+          "questions": []
+        },
+        {
+          "id": "2",
+          "title": "linear programming",
+
+          "questions": []
+        }
+      ]
+    }
+  ]
+}

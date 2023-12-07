@@ -1,4 +1,7 @@
-<script lang="ts"></script>
+<script lang="ts">
+  export let data: { quizzes: Subject[] };
+  const quizzes = data.quizzes;
+</script>
 
 <svelte:head>
   <title>SciMathQ</title>

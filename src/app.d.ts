@@ -7,6 +7,14 @@ declare global {
     // interface PageData {}
     // interface Platform {}
   }
+
+  interface Subject {
+    id: string;
+    code: string;
+    name: string;
+    imageUrl: string;
+    chapters: Chapter[];
+  }
 }
 
 export {};
