@@ -1,6 +1,5 @@
 <script lang="ts">
-  import { addAnswer } from "../../../store";
-
+  import Tabs from "../../../components/ui/Tabs.svelte";
   import Quiz from "./components/Quiz.svelte";
   import ResultsSummary from "./components/ResultsSummary.svelte";
 
@@ -9,52 +8,19 @@
     params: { subject: string; chapter: string };
   };
 
-  let currentQuestionIndex: number = 0;
-  let totalQuestions: number = data.chapter.questions.length;
-  let showNextQuestion: boolean = true;
-  let showPrevQuestion: boolean = false;
-  let selectedOption: string | null;
-
-  $: question = data.chapter.questions[currentQuestionIndex];
-
-  function handleNext() {
-    if (!selectedOption) return;
-
-    if (currentQuestionIndex === totalQuestions - 1) {
-      showNextQuestion = false;
-    } else currentQuestionIndex++;
-
-    showPrevQuestion = true;
-    selectedOption = null;
-  }
-
-  function handlePrev() {
-    currentQuestionIndex--;
-    showNextQuestion = true;
-
-    if (currentQuestionIndex === 0) showPrevQuestion = false;
-  }
-
-  function changeSelectedOption(label: string): void {
-    selectedOption = label;
-    addAnswer(selectedOption, question.answer === selectedOption);
-  }
+  let hideResults = true;
 </script>
 
 <svelte:head>
-  <title>{data.chapter.title.toUpperCase()}</title>
+  <title>{data.params.chapter.toUpperCase()}</title>
 </svelte:head>
-{#if showNextQuestion}
-  <Quiz
-    {question}
-    {currentQuestionIndex}
-    {totalQuestions}
-    {selectedOption}
-    {showPrevQuestion}
-    {handleNext}
-    {handlePrev}
-    {changeSelectedOption}
-  />
-{:else}
-  <ResultsSummary />
-{/if}
+
+<div class="p-8 max-w-3xl mx-auto space-y-8">
+  <Tabs subject={data.params.subject} chapter={data.params.chapter} />
+
+  {#if hideResults}
+    <Quiz {data} bind:hideResults />
+  {:else}
+    <ResultsSummary {data} bind:hideResults />
+  {/if}
+</div>

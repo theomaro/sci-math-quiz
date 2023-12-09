@@ -47,11 +47,8 @@
   class="group h-14 flex justify-between items-center px-4 max-w-7xl mx-auto"
 >
   <a href="/" class="text-emerald-800 font-bold p-2 flex items-center">
-    <img
-      src={logoUrl}
-      alt=""
-      class="object-cover w-5"
-    />&nbsp;Sci<span class="text-stone-700 underline font-medium">Math</span
+    <img src={logoUrl} alt="" class="object-cover w-5" />&nbsp;Sci<span
+      class="text-stone-700 underline font-medium">Math</span
     >Q</a
   >
 
@@ -111,7 +108,11 @@
               />
             </li>
             <li>
-              <Link href="/mathematics" text="mathematics" styles=" md:p-3" />
+              <Link
+                href="/basic-mathematics"
+                text="mathematics"
+                styles=" md:p-3"
+              />
             </li>
           </ul>
         </div>
