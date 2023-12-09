@@ -1,5 +1,7 @@
 <script lang="ts">
+  import { onMount } from "svelte";
   import Tabs from "../../../components/ui/Tabs.svelte";
+  import { answers } from "../../../store";
   import Quiz from "./components/Quiz.svelte";
   import ResultsSummary from "./components/ResultsSummary.svelte";
 
@@ -8,7 +10,9 @@
     params: { subject: string; chapter: string };
   };
 
-  let hideResults = true;
+  let hideResults = false;
+
+  onMount(() => answers.set([]));
 </script>
 
 <svelte:head>
