@@ -1,5 +1,6 @@
 <script lang="ts">
   import Card from "../components/ui/Card.svelte";
+  import Hero from "../components/ui/Hero.svelte";
 
   export let data: { subjects: Subject[] };
 </script>
@@ -7,6 +8,8 @@
 <svelte:head>
   <title>SciMathQ</title>
 </svelte:head>
+
+<Hero />
 
 <section
   class="quizzes-container px-4 py-8 space-y-12 md:space-y-16 max-w-7xl mx-auto"
