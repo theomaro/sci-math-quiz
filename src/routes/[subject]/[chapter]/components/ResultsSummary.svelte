@@ -19,17 +19,21 @@
 
   function handleRestart() {
     hideResults = true;
-    goto(`/${data.params.subject}/${data.params.chapter}`);
+    answers.set([]);
   }
 
   function goBack() {
     goto(`/${data.params.subject}`);
   }
+
+  function showAnswers() {
+    //
+  }
 </script>
 
 <article class="pb-8 border-b-2">
   <p class="font-bold text-gray-400 tracking-tight capitalize mb-3 md:text-2xl">
-    <span class="text-emerald-500">{totalCorrectAnswer}</span>
+    <span class="text-amber-600">{totalCorrectAnswer}</span>
     <span class="text-gray-500">/{totalQuestions}</span> Questions answered correctly
   </p>
 
@@ -40,8 +44,11 @@
       </div>
 
       <div class="tracking-tight flex flex-col">
-        <p class="font-medium text-lg md:text-3xl">
-          Your score is <span class="text-red-500">{percent}%</span>
+        <p class="font-bold text-lg md:text-3xl">
+          Your score is <span
+            class={percent < 50 ? "text-red-500" : "text-green-600"}
+            >{percent}%</span
+          >
         </p>
 
         <span class="text-sm md:text-xl"
@@ -68,7 +75,7 @@
 
 <article>
   <Button
-    onClickHandler={handleRestart}
+    onClickHandler={showAnswers}
     text="answers"
     styles="capitalize font-bold text-xl text-sky-900 flex justify-between items-center w-full"
   >
