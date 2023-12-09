@@ -4,7 +4,9 @@ A web-based quiz application to prepare science and mathematics students for fin
 
 ## Preview
 
-![](screenshot.png)
+|          Desktop           |          Mobile           |
+| :------------------------: | :-----------------------: |
+| ![](./desktop-preview.png) | ![](./mobile-preview.png) |
 
 Live [Demo](https://sci-math-quiz.vercel.app/)
 
