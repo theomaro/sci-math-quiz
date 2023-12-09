@@ -8,16 +8,268 @@
 
       "chapters": [
         {
-          "id": "1",
+          "id": "4de735b1-4bf4-4a94-ad1b-e6f841470245",
           "title": "waves",
 
-          "questions": []
+          "questions": [
+            {
+              "id": "9afbbbcf-fe68-3cac-ee9c-cc0370a72535",
+              "text": "What does wave transmit from one place to others?",
+              "answer": "d",
+              "options": [
+                {
+                  "id": "5ff7c29a-4b34-7267-d3dc-f6238a50a822",
+                  "label": "a",
+                  "text": "Amplitude"
+                },
+                {
+                  "id": "aaeac8ed-3c8d-59c3-91ec-112291eab307",
+                  "label": "b",
+                  "text": "Wavelength"
+                },
+                {
+                  "id": "697394e1-fbee-da99-5f19-c57e1395e2ff",
+                  "label": "c",
+                  "text": "Mass"
+                },
+                {
+                  "id": "e74c4f18-6ca5-2793-0718-97c31cfb5053",
+                  "label": "d",
+                  "text": "Energy"
+                }
+              ],
+              "notes": "",
+              "createAt": "1979-02-24T01:56:56.0Z",
+              "modifiedAt": "1975-09-19T01:52:29.0Z"
+            },
+            {
+              "id": "f7848acc-00ab-4210-96b7-e49db32fe87f",
+              "text": "The particle of the medium vibrates in the transverse wave ...",
+              "answer": "a",
+              "options": [
+                {
+                  "id": "5ff7c29a-4b34-7267-d3dc-f6238a50a822",
+                  "label": "a",
+                  "text": "At a right angle to the direction of wave motion"
+                },
+                {
+                  "id": "aaeac8ed-3c8d-59c3-91ec-112291eab307",
+                  "label": "b",
+                  "text": "Along the direction of wave motion"
+                },
+                {
+                  "id": "697394e1-fbee-da99-5f19-c57e1395e2ff",
+                  "label": "c",
+                  "text": "Do not vibrate at all"
+                },
+                {
+                  "id": "e74c4f18-6ca5-2793-0718-97c31cfb5053",
+                  "label": "d",
+                  "text": "Opposite to the direction of wave motion"
+                },
+                {
+                  "id": "24f59636-280c-4c52-b3c7-9e62bd7f675f",
+                  "label": "e",
+                  "text": "None of these"
+                },
+                {
+                  "id": "8d7cc0ca-cae3-42b2-ba44-c3da2bc20ffd",
+                  "label": "f",
+                  "text": "All of these"
+                }
+              ],
+              "createAt": "1979-02-24T01:56:56.0Z"
+            },
+            {
+              "id": "5ba30333-5e44-4786-b036-6d5b2364a394",
+              "text": "The particles of the medium vibrate in longitudinal waves …",
+              "answer": "b",
+              "options": [
+                {
+                  "id": "5ff7c29a-4b34-7267-d3dc-f6238a50a822",
+                  "label": "a",
+                  "text": "perpendicular to the direction of the wave motion"
+                },
+                {
+                  "id": "aaeac8ed-3c8d-59c3-91ec-112291eab307",
+                  "label": "b",
+                  "text": "Along the direction of wave motion"
+                },
+                {
+                  "id": "697394e1-fbee-da99-5f19-c57e1395e2ff",
+                  "label": "c",
+                  "text": "Opposite to the direction of the wave motion"
+                },
+                {
+                  "id": "e74c4f18-6ca5-2793-0718-97c31cfb5053",
+                  "label": "d",
+                  "text": "Do not vibrate at all"
+                },
+                {
+                  "id": "24f59636-280c-4c52-b3c7-9e62bd7f675f",
+                  "label": "e",
+                  "text": "None of these"
+                }
+              ],
+              "createAt": "1979-02-24T01:56:56.0Z",
+              "modifiedAt": "1975-09-19T01:52:29.0Z"
+            }
+          ]
         },
         {
-          "id": "2",
+          "id": "15c7a6e5-6d85-4927-9cb7-180ba95e92e5",
           "title": "electromagnetism",
 
-          "questions": []
+          "questions": [
+            {
+              "id": "9afbbbcf-fe68-3cac-ee9c-cc0370a72535",
+              "text": "The conduction current is the same as the displacement current when the source is ac.",
+              "answer": "d",
+              "options": [
+                {
+                  "id": "5ff7c29a-4b34-7267-d3dc-f6238a50a822",
+                  "label": "a",
+                  "text": "moving in a circular orbit"
+                },
+                {
+                  "id": "aaeac8ed-3c8d-59c3-91ec-112291eab307",
+                  "label": "b",
+                  "text": "moving with a constant velocity"
+                },
+                {
+                  "id": "697394e1-fbee-da99-5f19-c57e1395e2ff",
+                  "label": "c",
+                  "text": "falling in an electric field"
+                },
+                {
+                  "id": "e74c4f18-6ca5-2793-0718-97c31cfb5053",
+                  "label": "d",
+                  "text": "Both (a) and (c)"
+                }
+              ],
+              "notes": "An accelerated charge is the source of electromagnetic waves (EMWs). When the charge is in a circular motion, the direction of its velocity continuously changes and thus it is in accelerated motion and produces EMWs. A charge falling in an electric field is accelerated by the electric force and thus produces EMWs.",
+              "createAt": "1979-02-24T01:56:56.0Z",
+              "modifiedAt": "1975-09-19T01:52:29.0Z"
+            },
+            {
+              "id": "89fe4bc9-fd18-41c3-bf38-762e02023bb6",
+              "text": "Which of the following proves that electromagnetic waves are transverse?",
+              "answer": "d",
+              "options": [
+                {
+                  "id": "5ff7c29a-4b34-7267-d3dc-f6238a50a822",
+                  "label": "a",
+                  "text": "Reflection"
+                },
+                {
+                  "id": "aaeac8ed-3c8d-59c3-91ec-112291eab307",
+                  "label": "b",
+                  "text": "Diffraction"
+                },
+                {
+                  "id": "697394e1-fbee-da99-5f19-c57e1395e2ff",
+                  "label": "c",
+                  "text": "Interference"
+                },
+                {
+                  "id": "e74c4f18-6ca5-2793-0718-97c31cfb5053",
+                  "label": "d",
+                  "text": "Polarisation"
+                }
+              ],
+              "notes": "Only transverse waves can be polarised.",
+              "createAt": "1979-02-24T01:56:56.0Z",
+              "modifiedAt": "1975-09-19T01:52:29.0Z"
+            },
+            {
+              "id": "ad5bd467-59e6-42ea-ac43-4cdd11477aa9",
+              "text": "According to Maxwell's Hypothesis, a changing electric field gives rise to?",
+              "answer": "c",
+              "options": [
+                {
+                  "id": "5ff7c29a-4b34-7267-d3dc-f6238a50a822",
+                  "label": "a",
+                  "text": "Induced EMF"
+                },
+                {
+                  "id": "aaeac8ed-3c8d-59c3-91ec-112291eab307",
+                  "label": "b",
+                  "text": "Electric Field"
+                },
+                {
+                  "id": "697394e1-fbee-da99-5f19-c57e1395e2ff",
+                  "label": "c",
+                  "text": "Magnetic Field"
+                },
+                {
+                  "id": "e74c4f18-6ca5-2793-0718-97c31cfb5053",
+                  "label": "d",
+                  "text": "Magnetic Dipole"
+                }
+              ],
+              "notes": "A changing electric field gives rise to a magnetic field.",
+              "createAt": "1979-02-24T01:56:56.0Z",
+              "modifiedAt": "1975-09-19T01:52:29.0Z"
+            },
+            {
+              "id": "b2788222-b31f-420e-829d-8ec1daf5a466",
+              "text": "Which of the following waves have a maximum frequency?",
+              "answer": "b",
+              "options": [
+                {
+                  "id": "5ff7c29a-4b34-7267-d3dc-f6238a50a822",
+                  "label": "a",
+                  "text": "infrared waves"
+                },
+                {
+                  "id": "aaeac8ed-3c8d-59c3-91ec-112291eab307",
+                  "label": "b",
+                  "text": "gamma rays"
+                },
+                {
+                  "id": "697394e1-fbee-da99-5f19-c57e1395e2ff",
+                  "label": "c",
+                  "text": "microwaves"
+                },
+                {
+                  "id": "e74c4f18-6ca5-2793-0718-97c31cfb5053",
+                  "label": "d",
+                  "text": "radio waves"
+                }
+              ],
+              "notes": "Gamma rays have a maximum frequency.",
+              "createAt": "1979-02-24T01:56:56.0Z"
+            },
+            {
+              "id": "9afbbbcf-fe68-3cac-ee9c-cc0370a72aaa",
+              "text": "What is the phase difference between electric and magnetic fields in an electromagnetic wave?",
+              "answer": "b",
+              "options": [
+                {
+                  "id": "5ff7c29a-4b34-7267-d3dc-f6238a50a822",
+                  "label": "a",
+                  "text": "0"
+                },
+                {
+                  "id": "aaeac8ed-3c8d-59c3-91ec-112291eab307",
+                  "label": "b",
+                  "text": "π"
+                },
+                {
+                  "id": "697394e1-fbee-da99-5f19-c57e1395e2ff",
+                  "label": "c",
+                  "text": "π/2"
+                },
+                {
+                  "id": "e74c4f18-6ca5-2793-0718-97c31cfb5053",
+                  "label": "d",
+                  "text": "π/4"
+                }
+              ],
+              "notes": "The phase difference between electric and magnetic fields in an electromagnetic wave is π.",
+              "createAt": "1979-02-24T01:56:56.0Z"
+            }
+          ]
         }
       ]
     },
@@ -30,16 +282,248 @@
 
       "chapters": [
         {
-          "id": "1",
+          "id": "b2e9c694-fec1-4f51-a93d-41b5a42d9b89",
           "title": "growth",
 
-          "questions": []
+          "questions": [
+            {
+              "id": "9afbbbcf-fe68-3cac-ee9c-cc0370a72535",
+              "text": "What is the first step in the process of plant growth?Seed ",
+              "answer": "c",
+              "options": [
+                {
+                  "id": "5ff7c29a-4b34-7267-d3dc-f6238a50a822",
+                  "label": "a",
+                  "text": "Seed fermentation"
+                },
+                {
+                  "id": "aaeac8ed-3c8d-59c3-91ec-112291eab307",
+                  "label": "b",
+                  "text": "Seed desiccation"
+                },
+                {
+                  "id": "697394e1-fbee-da99-5f19-c57e1395e2ff",
+                  "label": "c",
+                  "text": "Seed germination"
+                },
+                {
+                  "id": "e74c4f18-6ca5-2793-0718-97c31cfb5053",
+                  "label": "d",
+                  "text": "Seed dormancy"
+                }
+              ],
+              "notes": "The first step in the process of plant growth is seed germination. The seed germinates when favourable conditions are available like the presence of oxygen, water and certain enzymes. If these conditions are not available, then a seed may suspend its activities and will germinate only when these conditions become available.",
+              "createAt": "1979-02-24T01:56:56.0Z",
+              "modifiedAt": "1975-09-19T01:52:29.0Z"
+            },
+            {
+              "id": "17d2d403-cc69-4771-bf5a-0464dc9f1837",
+              "text": "Development is the sum of how many processes?",
+              "answer": "b",
+              "options": [
+                {
+                  "id": "5ff7c29a-4b34-7267-d3dc-f6238a50a822",
+                  "label": "a",
+                  "text": "One"
+                },
+                {
+                  "id": "aaeac8ed-3c8d-59c3-91ec-112291eab307",
+                  "label": "b",
+                  "text": "Two"
+                },
+                {
+                  "id": "697394e1-fbee-da99-5f19-c57e1395e2ff",
+                  "label": "c",
+                  "text": "Three"
+                },
+                {
+                  "id": "e74c4f18-6ca5-2793-0718-97c31cfb5053",
+                  "label": "d",
+                  "text": "Four"
+                }
+              ],
+              "notes": "Development is the sum of two processes-growth and differentiation. To begin with, it is essential and sufficient to know that the development of a mature plant from a zygote follows a precise and highly ordered succession of events.",
+              "createAt": "1979-02-24T01:56:56.0Z"
+            },
+            {
+              "id": "54ba3887-82b5-4ec7-8382-bf3d46c20075",
+              "text": "All the cells of the plant are descendants of which of the following?",
+              "answer": "d",
+              "options": [
+                {
+                  "id": "5ff7c29a-4b34-7267-d3dc-f6238a50a822",
+                  "label": "a",
+                  "text": "Apical tissue"
+                },
+                {
+                  "id": "aaeac8ed-3c8d-59c3-91ec-112291eab307",
+                  "label": "b",
+                  "text": "Intercalary tissue"
+                },
+                {
+                  "id": "697394e1-fbee-da99-5f19-c57e1395e2ff",
+                  "label": "c",
+                  "text": "Meristem"
+                },
+                {
+                  "id": "e74c4f18-6ca5-2793-0718-97c31cfb5053",
+                  "label": "d",
+                  "text": "Zygote"
+                }
+              ],
+              "notes": "All cells of a plant are descendants of the zygote. Trees continue to increase in height or girth over some time. However, the leaves, flowers and fruits of the same tree appear and fall periodically and sometimes repeatedly.",
+              "createAt": "1979-02-24T01:56:56.0Z",
+              "modifiedAt": "1975-09-19T01:52:29.0Z"
+            }
+          ]
         },
         {
-          "id": "2",
+          "id": "0b5335fe-06e6-4958-95e2-6ccd11f3a996",
           "title": "genetics",
 
-          "questions": []
+          "questions": [
+            {
+              "id": "9afbbbcf-fe68-3cac-ee9c-cc0370a72535",
+              "text": "Nature is more important for ______ differences, while nurture has greater influence on ______ differences.",
+              "answer": "a",
+              "options": [
+                {
+                  "id": "5ff7c29a-4b34-7267-d3dc-f6238a50a822",
+                  "label": "a",
+                  "text": "structural and anatomical; psychological and social"
+                },
+                {
+                  "id": "aaeac8ed-3c8d-59c3-91ec-112291eab307",
+                  "label": "b",
+                  "text": "psychological and social; structural and anatomical"
+                },
+                {
+                  "id": "697394e1-fbee-da99-5f19-c57e1395e2ff",
+                  "label": "c",
+                  "text": "structural and psychological; anatomical and social"
+                },
+                {
+                  "id": "e74c4f18-6ca5-2793-0718-97c31cfb5053",
+                  "label": "d",
+                  "text": "social and anatomical; psychological and structural"
+                }
+              ],
+              "createAt": "1979-02-24T01:56:56.0Z"
+            },
+            {
+              "id": "54ba3887-82b5-4ec7-8382-bf3d46c20075",
+              "text": "The ______ is the set of observable characteristics and is the sum of genetic and environmental effects.",
+              "answer": "b",
+              "options": [
+                {
+                  "id": "5ff7c29a-4b34-7267-d3dc-f6238a50a822",
+                  "label": "a",
+                  "text": "genotype"
+                },
+                {
+                  "id": "aaeac8ed-3c8d-59c3-91ec-112291eab307",
+                  "label": "b",
+                  "text": "phenotype"
+                },
+                {
+                  "id": "697394e1-fbee-da99-5f19-c57e1395e2ff",
+                  "label": "c",
+                  "text": "both genotype and phenotype"
+                },
+                {
+                  "id": "e74c4f18-6ca5-2793-0718-97c31cfb5053",
+                  "label": "d",
+                  "text": "neither genotype or phenotype"
+                }
+              ],
+              "createAt": "1979-02-24T01:56:56.0Z"
+            },
+            {
+              "id": "92d0cd48-e1e3-4e03-8938-444170ab2208",
+              "text": " It is currently estimated that there are ______ human protein-coding genes although this estimate may be reduced over time.",
+              "answer": "b",
+              "options": [
+                {
+                  "id": "5ff7c29a-4b34-7267-d3dc-f6238a50a822",
+                  "label": "a",
+                  "text": "10,000-15,000"
+                },
+                {
+                  "id": "aaeac8ed-3c8d-59c3-91ec-112291eab307",
+                  "label": "b",
+                  "text": "19,000-20,000"
+                },
+                {
+                  "id": "697394e1-fbee-da99-5f19-c57e1395e2ff",
+                  "label": "c",
+                  "text": "29,000-30,000"
+                },
+                {
+                  "id": "e74c4f18-6ca5-2793-0718-97c31cfb5053",
+                  "label": "d",
+                  "text": "100,000"
+                }
+              ],
+              "createAt": "1979-02-24T01:56:56.0Z"
+            },
+            {
+              "id": "2ee91dda-ec1d-43ed-9ca5-d2f04871cc7c",
+              "text": " ______ explained genetic disorders such as alkaptonuria and albinism.",
+              "answer": "a",
+              "options": [
+                {
+                  "id": "5ff7c29a-4b34-7267-d3dc-f6238a50a822",
+                  "label": "a",
+                  "text": "Recessive inheritance has"
+                },
+                {
+                  "id": "aaeac8ed-3c8d-59c3-91ec-112291eab307",
+                  "label": "b",
+                  "text": "Dominant genes have"
+                },
+                {
+                  "id": "697394e1-fbee-da99-5f19-c57e1395e2ff",
+                  "label": "c",
+                  "text": "X chromosomes"
+                },
+                {
+                  "id": "e74c4f18-6ca5-2793-0718-97c31cfb5053",
+                  "label": "d",
+                  "text": "Y chromosomes"
+                }
+              ],
+              "createAt": "1979-02-24T01:56:56.0Z",
+              "modifiedAt": "1975-09-19T01:52:29.0Z"
+            },
+            {
+              "id": "cffbfd48-5225-4251-95e1-a3ff88b8d023",
+              "text": "In humans, each cell normally contains ______ of chromosomes.",
+              "answer": "b",
+              "options": [
+                {
+                  "id": "5ff7c29a-4b34-7267-d3dc-f6238a50a822",
+                  "label": "a",
+                  "text": "11 pairs"
+                },
+                {
+                  "id": "aaeac8ed-3c8d-59c3-91ec-112291eab307",
+                  "label": "b",
+                  "text": "23 pairs"
+                },
+                {
+                  "id": "697394e1-fbee-da99-5f19-c57e1395e2ff",
+                  "label": "c",
+                  "text": "32 pairs"
+                },
+                {
+                  "id": "e74c4f18-6ca5-2793-0718-97c31cfb5053",
+                  "label": "d",
+                  "text": "46 pairs"
+                }
+              ],
+              "createAt": "1979-02-24T01:56:56.0Z"
+            }
+          ]
         }
       ]
     },
@@ -52,19 +536,13 @@
 
       "chapters": [
         {
-          "id": "1",
-          "title": "non metals and their compounds",
-
-          "questions": []
-        },
-        {
-          "id": "2",
+          "id": "b96fdd04-9df0-41a5-96e6-fe8ecd80595b",
           "title": "organic chemistry",
 
           "questions": [
             {
               "id": "9afbbbcf-fe68-3cac-ee9c-cc0370a72535",
-              "text": " Which of the following is the simplest member of organic compounds?",
+              "text": "Which of the following is the simplest member of organic compounds?",
               "answer": "c",
               "options": [
                 {
@@ -123,7 +601,7 @@
               "modifiedAt": "1977-05-27T14:25:33.0Z"
             },
             {
-              "id": "efeda7d5-2b80-b072-87b2-ad3f59948049",
+              "id": "cffbfd48-5225-4251-95e1-a3ff88b8d023",
               "text": "Hydrocarbons are organic compounds with element __________",
               "answer": "a",
               "options": [
@@ -154,11 +632,126 @@
             }
           ]
         },
+
         {
-          "id": "3",
+          "id": "dbc41246-f4c1-4937-a711-911cf9f43ca0",
           "title": "soil chemistry",
 
-          "questions": []
+          "questions": [
+            {
+              "id": "9afbbbcf-fe68-3cac-ee9c-cc0370a72535",
+              "text": "Olsen method is used for phosphorus estimation in:",
+              "answer": "b",
+              "options": [
+                {
+                  "id": "5ff7c29a-4b34-7267-d3dc-f6238a50a822",
+                  "label": "a",
+                  "text": "Acidic soil"
+                },
+                {
+                  "id": "aaeac8ed-3c8d-59c3-91ec-112291eab307",
+                  "label": "b",
+                  "text": "Neutral to alkali soil"
+                },
+                {
+                  "id": "697394e1-fbee-da99-5f19-c57e1395e2ff",
+                  "label": "c",
+                  "text": "Saline soil"
+                },
+                {
+                  "id": "e74c4f18-6ca5-2793-0718-97c31cfb5053",
+                  "label": "d",
+                  "text": "All of the above"
+                }
+              ],
+              "createAt": "1979-02-24T01:56:56.0Z"
+            },
+            {
+              "id": "cffbfd48-5225-4251-95e1-a3ff88b8d023",
+              "text": "Apatite is a group of minerals which mainly contains:",
+              "answer": "b",
+              "options": [
+                {
+                  "id": "5ff7c29a-4b34-7267-d3dc-f6238a50a822",
+                  "label": "a",
+                  "text": "Sulphur"
+                },
+                {
+                  "id": "aaeac8ed-3c8d-59c3-91ec-112291eab307",
+                  "label": "b",
+                  "text": "Phosphorus"
+                },
+                {
+                  "id": "697394e1-fbee-da99-5f19-c57e1395e2ff",
+                  "label": "c",
+                  "text": "Nitrogen"
+                },
+                {
+                  "id": "e74c4f18-6ca5-2793-0718-97c31cfb5053",
+                  "label": "d",
+                  "text": "Titanium"
+                }
+              ],
+              "createAt": "1979-02-24T01:56:56.0Z",
+              "modifiedAt": "1975-09-19T01:52:29.0Z"
+            },
+            {
+              "id": "34958f53-cfe3-4777-bb65-d6d883b339bb",
+              "text": "Which clay mineral is responsible for cracking in black soil?",
+              "answer": "d",
+              "options": [
+                {
+                  "id": "5ff7c29a-4b34-7267-d3dc-f6238a50a822",
+                  "label": "a",
+                  "text": "Kaolinite"
+                },
+                {
+                  "id": "aaeac8ed-3c8d-59c3-91ec-112291eab307",
+                  "label": "b",
+                  "text": "Illite"
+                },
+                {
+                  "id": "697394e1-fbee-da99-5f19-c57e1395e2ff",
+                  "label": "c",
+                  "text": "Vermiculite"
+                },
+                {
+                  "id": "e74c4f18-6ca5-2793-0718-97c31cfb5053",
+                  "label": "d",
+                  "text": "Montmorillonite"
+                }
+              ],
+              "createAt": "1979-02-24T01:56:56.0Z"
+            },
+            {
+              "id": "92d0cd48-e1e3-4e03-8938-444170ab2208",
+              "text": "Which one is lower category for classification of soil?",
+              "answer": "c",
+              "options": [
+                {
+                  "id": "5ff7c29a-4b34-7267-d3dc-f6238a50a822",
+                  "label": "a",
+                  "text": " Soil order"
+                },
+                {
+                  "id": "aaeac8ed-3c8d-59c3-91ec-112291eab307",
+                  "label": "b",
+                  "text": "Family"
+                },
+                {
+                  "id": "697394e1-fbee-da99-5f19-c57e1395e2ff",
+                  "label": "c",
+                  "text": "Soil series"
+                },
+                {
+                  "id": "e74c4f18-6ca5-2793-0718-97c31cfb5053",
+                  "label": "d",
+                  "text": "None of the above"
+                }
+              ],
+              "createAt": "1979-02-24T01:56:56.0Z"
+            }
+          ]
         }
       ]
     },
@@ -171,16 +764,276 @@
 
       "chapters": [
         {
-          "id": "1",
+          "id": "41c503b6-b658-448d-b645-0f8d4ec7c94a",
           "title": "coordinate geometry",
 
-          "questions": []
+          "questions": [
+            {
+              "id": "9afbbbcf-fe68-3cac-ee9c-cc0370a72535",
+              "text": "The midpoint of a line segment joining two points A(2, 4) and B(-2, -4) is",
+              "answer": "c",
+              "options": [
+                {
+                  "id": "5ff7c29a-4b34-7267-d3dc-f6238a50a822",
+                  "label": "a",
+                  "text": "(-2, 4)"
+                },
+                {
+                  "id": "aaeac8ed-3c8d-59c3-91ec-112291eab307",
+                  "label": "b",
+                  "text": "(2, -4)"
+                },
+                {
+                  "id": "697394e1-fbee-da99-5f19-c57e1395e2ff",
+                  "label": "c",
+                  "text": "(0, 0)"
+                },
+                {
+                  "id": "e74c4f18-6ca5-2793-0718-97c31cfb5053",
+                  "label": "d",
+                  "text": "(-2, -4)"
+                }
+              ],
+              "createAt": "1979-02-24T01:56:56.0Z",
+              "modifiedAt": "1975-09-19T01:52:29.0Z"
+            },
+            {
+              "id": "92d0cd48-e1e3-4e03-8938-444170ab2208",
+              "text": "If the distance between the points A(2, -2) and B(-1, x) is equal to 5, then the value of x is:",
+              "answer": "a",
+              "options": [
+                {
+                  "id": "5ff7c29a-4b34-7267-d3dc-f6238a50a822",
+                  "label": "a",
+                  "text": "2"
+                },
+                {
+                  "id": "aaeac8ed-3c8d-59c3-91ec-112291eab307",
+                  "label": "b",
+                  "text": "-2"
+                },
+                {
+                  "id": "697394e1-fbee-da99-5f19-c57e1395e2ff",
+                  "label": "c",
+                  "text": "1"
+                },
+                {
+                  "id": "e74c4f18-6ca5-2793-0718-97c31cfb5053",
+                  "label": "d",
+                  "text": "-1"
+                }
+              ],
+              "createAt": "1979-02-24T01:56:56.0Z"
+            },
+            {
+              "id": "84bc66bf-fc54-436a-b41b-4addf26b91f2",
+              "text": "The points (-1, -2), (1, 0), (-1, 2), (-3, 0) form a quadrilateral of type:",
+              "answer": "a",
+              "options": [
+                {
+                  "id": "5ff7c29a-4b34-7267-d3dc-f6238a50a822",
+                  "label": "a",
+                  "text": "Square"
+                },
+                {
+                  "id": "aaeac8ed-3c8d-59c3-91ec-112291eab307",
+                  "label": "b",
+                  "text": "Rectangle"
+                },
+                {
+                  "id": "697394e1-fbee-da99-5f19-c57e1395e2ff",
+                  "label": "c",
+                  "text": "Parallelogram"
+                },
+                {
+                  "id": "e74c4f18-6ca5-2793-0718-97c31cfb5053",
+                  "label": "d",
+                  "text": "Rhombus"
+                }
+              ],
+              "createAt": "1979-02-24T01:56:56.0Z",
+              "modifiedAt": "1975-09-19T01:52:29.0Z"
+            }
+          ]
         },
         {
-          "id": "2",
+          "id": "f8d72182-ce56-47fc-817e-a4985557f683",
           "title": "linear programming",
 
-          "questions": []
+          "questions": [
+            {
+              "id": "9afbbbcf-fe68-3cac-ee9c-cc0370a72535",
+              "text": "The linear inequalities or equations or restrictions on the variables of a linear programming problem are called:",
+              "answer": "a",
+              "options": [
+                {
+                  "id": "5ff7c29a-4b34-7267-d3dc-f6238a50a822",
+                  "label": "a",
+                  "text": "a constraint"
+                },
+                {
+                  "id": "aaeac8ed-3c8d-59c3-91ec-112291eab307",
+                  "label": "b",
+                  "text": "Objective function"
+                },
+                {
+                  "id": "697394e1-fbee-da99-5f19-c57e1395e2ff",
+                  "label": "c",
+                  "text": "Decision variables"
+                },
+                {
+                  "id": "e74c4f18-6ca5-2793-0718-97c31cfb5053",
+                  "label": "d",
+                  "text": "None of the above"
+                }
+              ],
+              "createAt": "1979-02-24T01:56:56.0Z"
+            },
+            {
+              "id": "84bc66bf-fc54-436a-b41b-4addf26b91f2",
+              "text": "The objective function of a linear programming problem is:",
+              "answer": "b",
+              "options": [
+                {
+                  "id": "5ff7c29a-4b34-7267-d3dc-f6238a50a822",
+                  "label": "a",
+                  "text": "a constraint"
+                },
+                {
+                  "id": "aaeac8ed-3c8d-59c3-91ec-112291eab307",
+                  "label": "b",
+                  "text": "function to be optimised"
+                },
+                {
+                  "id": "697394e1-fbee-da99-5f19-c57e1395e2ff",
+                  "label": "c",
+                  "text": "A relation between the variables"
+                },
+                {
+                  "id": "e74c4f18-6ca5-2793-0718-97c31cfb5053",
+                  "label": "d",
+                  "text": "None of these"
+                }
+              ],
+              "createAt": "1979-02-24T01:56:56.0Z"
+            },
+            {
+              "id": "9597b68b-13e9-4483-b1e7-25b5df40ec03",
+              "text": "Region represented by x ≥ 0, y ≥ 0 is:",
+              "answer": "a",
+              "options": [
+                {
+                  "id": "5ff7c29a-4b34-7267-d3dc-f6238a50a822",
+                  "label": "a",
+                  "text": "first quadrant"
+                },
+                {
+                  "id": "aaeac8ed-3c8d-59c3-91ec-112291eab307",
+                  "label": "b",
+                  "text": "second quadrant"
+                },
+                {
+                  "id": "697394e1-fbee-da99-5f19-c57e1395e2ff",
+                  "label": "c",
+                  "text": "third quadrant"
+                },
+                {
+                  "id": "e74c4f18-6ca5-2793-0718-97c31cfb5053",
+                  "label": "d",
+                  "text": "fourth quadrant"
+                }
+              ],
+              "notes": "All the positive values of x and y will lie in the first quadrant.",
+              "createAt": "1979-02-24T01:56:56.0Z",
+              "modifiedAt": "1975-09-19T01:52:29.0Z"
+            },
+            {
+              "id": "d7e35500-21aa-47a5-bc97-f172a52bf039",
+              "text": "The maximum value of Z = 3x + 4y subjected to constraints x + y ≤ 4, x ≥ 0 and y ≥ 0 is:",
+              "answer": "c",
+              "options": [
+                {
+                  "id": "5ff7c29a-4b34-7267-d3dc-f6238a50a822",
+                  "label": "a",
+                  "text": "12"
+                },
+                {
+                  "id": "aaeac8ed-3c8d-59c3-91ec-112291eab307",
+                  "label": "b",
+                  "text": "14"
+                },
+                {
+                  "id": "697394e1-fbee-da99-5f19-c57e1395e2ff",
+                  "label": "c",
+                  "text": "16"
+                },
+                {
+                  "id": "e74c4f18-6ca5-2793-0718-97c31cfb5053",
+                  "label": "d",
+                  "text": "None of the above"
+                }
+              ],
+              "createAt": "1979-02-24T01:56:56.0Z",
+              "modifiedAt": "1975-09-19T01:52:29.0Z"
+            },
+            {
+              "id": "0d56d721-1c4c-4e4c-af59-3c981a46e48f",
+              "text": "The minimum value of Z = 3x + 5y subjected to constraints x + 3y ≥ 3, x + y ≥ 2, x, y ≥ 0 is:",
+              "answer": "b",
+              "options": [
+                {
+                  "id": "5ff7c29a-4b34-7267-d3dc-f6238a50a822",
+                  "label": "a",
+                  "text": "5"
+                },
+                {
+                  "id": "aaeac8ed-3c8d-59c3-91ec-112291eab307",
+                  "label": "b",
+                  "text": "7"
+                },
+                {
+                  "id": "697394e1-fbee-da99-5f19-c57e1395e2ff",
+                  "label": "c",
+                  "text": "10"
+                },
+                {
+                  "id": "e74c4f18-6ca5-2793-0718-97c31cfb5053",
+                  "label": "d",
+                  "text": "11"
+                }
+              ],
+              "createAt": "1979-02-24T01:56:56.0Z",
+              "modifiedAt": "1975-09-19T01:52:29.0Z"
+            },
+            {
+              "id": "f8db90fa-dae3-4e75-bce7-05fcd9bb460a",
+              "text": "The optimal value of the objective function is attained at the points ",
+              "answer": "c",
+              "options": [
+                {
+                  "id": "5ff7c29a-4b34-7267-d3dc-f6238a50a822",
+                  "label": "a",
+                  "text": "given by intersection of lines representing inequations with axes only "
+                },
+                {
+                  "id": "aaeac8ed-3c8d-59c3-91ec-112291eab307",
+                  "label": "b",
+                  "text": "given by intersection of lines representing inequations with X-axis only"
+                },
+                {
+                  "id": "697394e1-fbee-da99-5f19-c57e1395e2ff",
+                  "label": "c",
+                  "text": "given by corner points of the feasible region"
+                },
+                {
+                  "id": "e74c4f18-6ca5-2793-0718-97c31cfb5053",
+                  "label": "d",
+                  "text": "at the origin"
+                }
+              ],
+              "createAt": "1979-02-24T01:56:56.0Z"
+            }
+          ]
         }
       ]
     }

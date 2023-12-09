@@ -1,9 +1,7 @@
 <script lang="ts">
   import Card from "../components/ui/Card.svelte";
 
-  export let data: { quizzes: Subject[] };
-
-  const quizzes = data.quizzes;
+  export let data: { subjects: Subject[] };
 </script>
 
 <svelte:head>
@@ -18,12 +16,12 @@
   </h2>
 
   <div class="grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-    {#each quizzes as quiz}
+    {#each data.subjects as subject (subject.id)}
       <Card
-        url={quiz.name.replaceAll(" ", "-")}
-        name={quiz.name}
-        imageUrl={quiz.imageUrl}
-        description={`${quiz.chapters.length} chapters`}
+        url={subject.name.replaceAll(" ", "-")}
+        name={subject.name}
+        imageUrl={subject.imageUrl}
+        description={`${subject.chapters.length} chapters`}
       />
     {/each}
   </div>

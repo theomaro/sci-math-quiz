@@ -11,15 +11,17 @@ export async function load({
   ) => Promise<Response>;
   params: { subject: string };
 }) {
-  const data: Subject[] = await fetch(PUBLIC_API_URL).then((res) => {
-    if (res.ok) return res.json();
-  });
+  let subjects: Subject[] = await fetch(PUBLIC_API_URL)
+    .then((res) => {
+      if (res.ok) return res.json();
+    })
+    .then((subject) => subject);
 
-  const subject = data.find(
+  const subject = subjects.find(
     (subject: Subject) => subject.name.replaceAll(" ", "-") === params.subject
   );
 
   if (!subject) throw error(404, "Page not found");
 
-  return subject;
+  return { subject, params };
 }

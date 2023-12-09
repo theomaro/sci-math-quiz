@@ -1,13 +1,11 @@
 <script lang="ts">
   import Card from "../../components/ui/Card.svelte";
 
-  export let data: Subject;
-
-  let chapters = data.chapters;
+  export let data;
 </script>
 
 <svelte:head>
-  <title>{data.name.toUpperCase()}</title>
+  <title>{data.subject.name.toUpperCase()}</title>
 </svelte:head>
 
 <section
@@ -18,10 +16,13 @@
   </h2>
 
   <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-    {#each chapters as chapter}
+    {#each data.subject.chapters as chapter (chapter.id)}
       {#if chapter.questions.length > 0}
         <Card
-          url={`${data.name}/${chapter.title.replaceAll(" ", "-")}`}
+          url={`${data.subject.name.replaceAll(" ", "-")}/${chapter.title.replaceAll(
+            " ",
+            "-"
+          )}`}
           name={chapter.title}
           description={`${chapter.questions.length} questions`}
         />

@@ -2,11 +2,13 @@ import { PUBLIC_API_URL } from "$env/static/public";
 import { error } from "@sveltejs/kit";
 
 export const load = async ({ fetch }) => {
-  let data: { quizzes: Subject[] } = await fetch(PUBLIC_API_URL).then((res) => {
-    if (res.ok) return res.json();
-  });
+  let subjects: Subject[] = await fetch(PUBLIC_API_URL)
+    .then((res) => {
+      if (res.ok) return res.json();
+    })
+    .then((subject) => subject);
 
-  if (!data) throw error(404, "Page not found");
+  if (!subjects) throw error(404, "Page not found");
 
-  return { quizzes: data };
+  return { subjects };
 };
