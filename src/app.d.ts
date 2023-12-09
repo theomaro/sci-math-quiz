@@ -35,6 +35,12 @@ declare global {
     label: string;
     text: string;
   }
+
+  interface Answer {
+    id: string;
+    selectedOption: string
+    isCorrect: boolean | null;
+  }
 }
 
 export {};
