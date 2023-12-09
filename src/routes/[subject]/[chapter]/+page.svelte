@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { goto } from "$app/navigation";
   import Button from "../../../components/ui/Button.svelte";
   import ProgressBar from "./components/ProgressBar.svelte";
   import QuestionText from "./components/QuestionText.svelte";
@@ -31,7 +30,7 @@
   }
 
   function handleSubmit() {
-    goto(`/${data.params.subject}/${data.params.chapter}/results`);
+    //
   }
 
   function handleSelectedOption(label: string): void {
