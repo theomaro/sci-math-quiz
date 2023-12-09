@@ -10,7 +10,7 @@
     params: { subject: string; chapter: string };
   };
 
-  let hideResults = false;
+  let hideResults = true;
 
   onMount(() => answers.set([]));
 </script>

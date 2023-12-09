@@ -28,7 +28,7 @@
 </script>
 
 <article class="pb-8 border-b-2">
-  <p class="font-bold text-gray-400 tracking-tight capitalize mb-3 md:text-xl">
+  <p class="font-bold text-gray-400 tracking-tight capitalize mb-3 md:text-2xl">
     <span class="text-emerald-500">{totalCorrectAnswer}</span>
     <span class="text-gray-500">/{totalQuestions}</span> Questions answered correctly
   </p>
@@ -41,7 +41,7 @@
 
       <div class="tracking-tight flex flex-col">
         <p class="font-medium text-lg md:text-3xl">
-          Your score is <span class="text-red-500 md:text-lg">{percent}%</span>
+          Your score is <span class="text-red-500">{percent}%</span>
         </p>
 
         <span class="text-sm md:text-xl"
