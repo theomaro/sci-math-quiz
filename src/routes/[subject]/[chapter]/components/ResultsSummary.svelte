@@ -18,6 +18,7 @@
 
   function handleRestart() {
     hideResults = true;
+    answers.set([]);
   }
 </script>
 
