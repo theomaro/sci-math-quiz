@@ -1,5 +1,6 @@
 <script lang="ts">
   import Card from "../../components/ui/Card.svelte";
+  import Tabs from "../../components/ui/Tabs.svelte";
 
   export let data;
 </script>
@@ -7,6 +8,10 @@
 <svelte:head>
   <title>{data.subject.name.toUpperCase()}</title>
 </svelte:head>
+
+<div class="p-8 max-w-3xl mx-auto">
+  <Tabs subject={data.subject.name} />
+</div>
 
 <section
   class="quizzes-container px-4 py-8 space-y-12 md:space-y-16 max-w-7xl mx-auto"
@@ -19,10 +24,10 @@
     {#each data.subject.chapters as chapter (chapter.id)}
       {#if chapter.questions.length > 0}
         <Card
-          url={`${data.subject.name.replaceAll(" ", "-")}/${chapter.title.replaceAll(
+          url={`${data.subject.name.replaceAll(
             " ",
             "-"
-          )}`}
+          )}/${chapter.title.replaceAll(" ", "-")}`}
           name={chapter.title}
           description={`${chapter.questions.length} questions`}
         />

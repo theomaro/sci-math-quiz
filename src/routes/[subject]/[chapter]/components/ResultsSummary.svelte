@@ -61,7 +61,7 @@
     text="answers"
     styles="capitalize font-bold text-xl text-sky-900 flex justify-between items-center w-full py-1 mb-3"
   >
-    <i class="ri-arrow-down-s-line group-[.show-answers]:rotate-180"></i>
+    <i class="ri-arrow-up-s-line group-[.show-answers]:rotate-180"></i>
   </Button>
 
   <ol class="hidden group-[.show-answers]:flex flex-col space-y-4">
