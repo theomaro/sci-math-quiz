@@ -1,7 +1,13 @@
 <script lang="ts">
   import { goto } from "$app/navigation";
-  import Button from "../../../../components/ui/Button.svelte";
+
   import { answers } from "../../../../store";
+
+  import Button from "../../../../components/ui/Button.svelte";
+  import QuestionItem from "./QuestionItem.svelte";
+  import AnswerItem from "./AnswerItem.svelte";
+  import ResultsCard from "./ResultsCard.svelte";
+  import AnswerCorrect from "./AnswerCorrect.svelte";
 
   export let data: {
     chapter: Chapter;
@@ -14,8 +20,6 @@
     (answer) => answer.isCorrect === true
   ).length;
   let percent = Math.ceil((totalCorrectAnswer / totalQuestions) * 100);
-
-  const summary: string = percent < 50 ? "less than" : "more than";
 
   function handleRestart() {
     hideResults = true;
@@ -38,38 +42,7 @@
   </p>
 
   <div class="shadow rounded-lg bg-white p-6 md:p-12 space-y-10 md:space-y-16">
-    <div class="flex items-center space-x-8">
-      <div>
-        <div class="h-24 w-24 md:h-32 md:w-32 rounded-full bg-rose-50"></div>
-      </div>
-
-      <div class="tracking-tight flex flex-col">
-        <p class="font-bold text-lg md:text-3xl">
-          Your score is <span
-            class={percent < 50 ? "text-red-500" : "text-green-600"}
-            >{percent}%</span
-          >
-        </p>
-
-        <span class="text-sm md:text-xl"
-          >Your results is {summary} the average</span
-        >
-      </div>
-    </div>
-
-    <div class="flex justify-between">
-      <Button
-        text="restart quiz"
-        onClickHandler={handleRestart}
-        styles="px-4 rounded-full py-2 uppercase bg-sky-600 text-white font-medium"
-      />
-
-      <Button
-        text="go back"
-        onClickHandler={goBack}
-        styles="px-4 rounded-full py-2 capitalize bg-emerald-600 text-white font-medium"
-      />
-    </div>
+    <ResultsCard {percent} {handleRestart} {goBack} />
   </div>
 </article>
 
@@ -77,8 +50,18 @@
   <Button
     onClickHandler={showAnswers}
     text="answers"
-    styles="capitalize font-bold text-xl text-sky-900 flex justify-between items-center w-full"
+    styles="capitalize font-bold text-xl text-sky-900 flex justify-between items-center w-full py-1 mb-3"
   >
-    <i class="ri-arrow-down-s-line"></i>
+    <i class="ri-arrow-up-s-line"></i>
   </Button>
+
+  <ol class="flex flex-col space-y-4">
+    {#each data.chapter.questions as question, i (question.id)}
+      <li>
+        <QuestionItem text={question.text} index={i + 1} />
+        <AnswerItem index={i} notes={question.notes} />
+        <AnswerCorrect {question} />
+      </li>
+    {/each}
+  </ol>
 </article>

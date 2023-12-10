@@ -28,6 +28,9 @@ declare global {
     answer: string;
 
     options: Option[];
+    notes: string;
+    createAt: string;
+    modifiedAt: string;
   }
 
   interface Option {
@@ -38,7 +41,7 @@ declare global {
 
   interface Answer {
     id: string;
-    selectedOption: string
+    selectedOption: string;
     isCorrect: boolean | null;
   }
 }
