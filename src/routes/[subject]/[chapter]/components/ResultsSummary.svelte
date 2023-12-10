@@ -20,8 +20,6 @@
   ).length;
   let percent = Math.ceil((totalCorrectAnswer / totalQuestions) * 100);
 
-  let container: HTMLElement;
-
   function handleRestart() {
     hideResults = true;
     answers.set([]);
@@ -31,15 +29,18 @@
     goto(`/${data.params.subject}`);
   }
 
-  function toggleAnswers() {
-    container.classList.toggle("show-answers");
+  function toggleAnswers(
+    event: MouseEvent & { currentTarget: EventTarget & HTMLButtonElement }
+  ) {
+    let target = event.currentTarget;
+    target.parentElement?.classList.toggle("show-answers");
   }
 
   function toggleAnswer(
     event: MouseEvent & { currentTarget: EventTarget & HTMLButtonElement }
   ) {
     let target = event.currentTarget;
-    target.parentElement?.classList.toggle("show-inner");
+    target.parentElement?.classList.toggle("show-answer");
   }
 </script>
 
@@ -54,7 +55,7 @@
   </div>
 </article>
 
-<article class="group show-answers" bind:this={container}>
+<article class="group show-answers">
   <Button
     onClickHandler={toggleAnswers}
     text="answers"
@@ -73,11 +74,11 @@
           <span>{i + 1}.</span>
           <p class="first-letter:capitalize">{question.text}</p>
           <i
-            class="ri-arrow-up-s-line text-xl ms-auto group-[.show-inner]:rotate-180"
+            class="ri-arrow-up-s-line text-xl ms-auto group-[.show-answer]:rotate-180"
           ></i>
         </Button>
 
-        <div class="hidden group-[.show-inner]:block">
+        <div class="hidden group-[.show-answer]:block">
           <AnswerItem index={i} notes={question.notes} />
           <AnswerCorrect {question} />
         </div>
