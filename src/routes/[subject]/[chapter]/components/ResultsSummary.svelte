@@ -21,6 +21,8 @@
   ).length;
   let percent = Math.ceil((totalCorrectAnswer / totalQuestions) * 100);
 
+  let container: HTMLElement;
+
   function handleRestart() {
     hideResults = true;
     answers.set([]);
@@ -31,7 +33,7 @@
   }
 
   function showAnswers() {
-    //
+    container.classList.toggle("show");
   }
 </script>
 
@@ -46,16 +48,16 @@
   </div>
 </article>
 
-<article>
+<article class="group" bind:this={container}>
   <Button
     onClickHandler={showAnswers}
     text="answers"
     styles="capitalize font-bold text-xl text-sky-900 flex justify-between items-center w-full py-1 mb-3"
   >
-    <i class="ri-arrow-up-s-line"></i>
+    <i class="ri-arrow-down-s-line group-[.show]:rotate-180"></i>
   </Button>
 
-  <ol class="flex flex-col space-y-4">
+  <ol class="hidden group-[.show]:flex flex-col space-y-4">
     {#each data.chapter.questions as question, i (question.id)}
       <li>
         <QuestionItem text={question.text} index={i + 1} />

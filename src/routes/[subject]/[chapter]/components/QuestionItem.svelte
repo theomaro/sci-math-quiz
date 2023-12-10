@@ -9,9 +9,10 @@
 
 <Button
   onClickHandler={showAnswer}
-  styles="flex md:items-center py-1 mb-3 w-full gap-3 text-start text-slate-700 leading-snug"
+  styles="flex items-start md:items-center py-1 mb-3 w-full gap-3 text-start text-slate-700 leading-snug"
 >
   <p>{index}.</p>
   <p class="first-letter:capitalize">{text}</p>
-  <i class="ri-arrow-up-s-line text-xl ms-auto"></i>
+  <i class="ri-arrow-up-s-line text-xl ms-auto group-[.hide-inner]:rotate-180"
+  ></i>
 </Button>
