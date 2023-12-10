@@ -66,16 +66,16 @@
   <ol class="hidden group-[.show]:flex flex-col space-y-4">
     {#each data.chapter.questions as question, i (question.id)}
       <li class="group">
-        <button
-          on:click={toggleAnswer}
-          class="flex items-start md:items-center py-1 mb-3 w-full gap-3 text-start text-slate-700 leading-snug"
+        <Button
+          onClickHandler={toggleAnswer}
+          styles="flex items-start md:items-center py-1 mb-3 w-full gap-3 text-start text-slate-700 leading-snug"
         >
           <span>{i + 1}.</span>
           <p class="first-letter:capitalize">{question.text}</p>
           <i
             class="ri-arrow-up-s-line text-xl ms-auto group-[.show-inner]:rotate-180"
           ></i>
-        </button>
+        </Button>
 
         <div class="hidden group-[.show-inner]:block">
           <AnswerItem index={i} notes={question.notes} />
