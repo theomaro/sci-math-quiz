@@ -31,11 +31,16 @@
     goto(`/${data.params.subject}`);
   }
 
-  function showAnswers() {
+  function toggleAnswers() {
     container.classList.toggle("show");
   }
 
-  function showAnswer() {}
+  function toggleAnswer(
+    event: MouseEvent & { currentTarget: EventTarget & HTMLButtonElement }
+  ) {
+    let target = event.currentTarget;
+    target.parentElement?.classList.toggle("show-inner");
+  }
 </script>
 
 <article class="pb-8 border-b-2">
@@ -51,7 +56,7 @@
 
 <article class="group" bind:this={container}>
   <Button
-    onClickHandler={showAnswers}
+    onClickHandler={toggleAnswers}
     text="answers"
     styles="capitalize font-bold text-xl text-sky-900 flex justify-between items-center w-full py-1 mb-3"
   >
@@ -60,19 +65,19 @@
 
   <ol class="hidden group-[.show]:flex flex-col space-y-4">
     {#each data.chapter.questions as question, i (question.id)}
-      <li>
-        <Button
-          onClickHandler={showAnswer}
-          styles="flex items-start md:items-center py-1 mb-3 w-full gap-3 text-start text-slate-700 leading-snug"
+      <li class="group">
+        <button
+          on:click={toggleAnswer}
+          class="flex items-start md:items-center py-1 mb-3 w-full gap-3 text-start text-slate-700 leading-snug"
         >
           <span>{i + 1}.</span>
           <p class="first-letter:capitalize">{question.text}</p>
           <i
-            class="ri-arrow-up-s-line text-xl ms-auto group-[.hide-inner]:rotate-180"
+            class="ri-arrow-up-s-line text-xl ms-auto group-[.show-inner]:rotate-180"
           ></i>
-        </Button>
+        </button>
 
-        <div>
+        <div class="hidden group-[.show-inner]:block">
           <AnswerItem index={i} notes={question.notes} />
           <AnswerCorrect {question} />
         </div>
