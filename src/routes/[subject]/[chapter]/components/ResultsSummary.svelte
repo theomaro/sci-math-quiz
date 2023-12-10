@@ -4,7 +4,6 @@
   import { answers } from "../../../../store";
 
   import Button from "../../../../components/ui/Button.svelte";
-  import QuestionItem from "./QuestionItem.svelte";
   import AnswerItem from "./AnswerItem.svelte";
   import ResultsCard from "./ResultsCard.svelte";
   import AnswerCorrect from "./AnswerCorrect.svelte";
@@ -35,6 +34,8 @@
   function showAnswers() {
     container.classList.toggle("show");
   }
+
+  function showAnswer() {}
 </script>
 
 <article class="pb-8 border-b-2">
@@ -60,9 +61,21 @@
   <ol class="hidden group-[.show]:flex flex-col space-y-4">
     {#each data.chapter.questions as question, i (question.id)}
       <li>
-        <QuestionItem text={question.text} index={i + 1} />
-        <AnswerItem index={i} notes={question.notes} />
-        <AnswerCorrect {question} />
+        <Button
+          onClickHandler={showAnswer}
+          styles="flex items-start md:items-center py-1 mb-3 w-full gap-3 text-start text-slate-700 leading-snug"
+        >
+          <span>{i + 1}.</span>
+          <p class="first-letter:capitalize">{question.text}</p>
+          <i
+            class="ri-arrow-up-s-line text-xl ms-auto group-[.hide-inner]:rotate-180"
+          ></i>
+        </Button>
+
+        <div>
+          <AnswerItem index={i} notes={question.notes} />
+          <AnswerCorrect {question} />
+        </div>
       </li>
     {/each}
   </ol>
