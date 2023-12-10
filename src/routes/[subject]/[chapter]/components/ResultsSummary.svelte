@@ -32,7 +32,7 @@
   }
 
   function toggleAnswers() {
-    container.classList.toggle("show");
+    container.classList.toggle("show-answers");
   }
 
   function toggleAnswer(
@@ -54,16 +54,16 @@
   </div>
 </article>
 
-<article class="group" bind:this={container}>
+<article class="group show-answers" bind:this={container}>
   <Button
     onClickHandler={toggleAnswers}
     text="answers"
     styles="capitalize font-bold text-xl text-sky-900 flex justify-between items-center w-full py-1 mb-3"
   >
-    <i class="ri-arrow-down-s-line group-[.show]:rotate-180"></i>
+    <i class="ri-arrow-down-s-line group-[.show-answers]:rotate-180"></i>
   </Button>
 
-  <ol class="hidden group-[.show]:flex flex-col space-y-4">
+  <ol class="hidden group-[.show-answers]:flex flex-col space-y-4">
     {#each data.chapter.questions as question, i (question.id)}
       <li class="group">
         <Button
