@@ -3,7 +3,11 @@ import { v4 as uuidV4 } from "uuid";
 
 export const answers = writable<Answer[]>([]);
 
-export const addAnswer = (selectedOption: string, isCorrect: boolean) => {
+export const addAnswer = (
+  index: number,
+  selectedOption: string,
+  isCorrect: boolean
+) => {
   let data = {
     id: uuidV4(),
     selectedOption,
@@ -11,6 +15,12 @@ export const addAnswer = (selectedOption: string, isCorrect: boolean) => {
   };
 
   answers.update((currentState) => {
-    return [...currentState, data];
+    if (!currentState[index]) {
+      currentState = [...currentState, data];
+    } else {
+      currentState[index].selectedOption = selectedOption;
+      currentState[index].isCorrect = isCorrect;
+    }
+    return currentState;
   });
 };

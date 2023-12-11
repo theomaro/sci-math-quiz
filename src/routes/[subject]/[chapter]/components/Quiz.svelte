@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { addAnswer } from "../../../../store";
+  import { addAnswer, answers } from "../../../../store";
 
   import Button from "../../../../components/ui/Button.svelte";
   import ProgressBar from "./ProgressBar.svelte";
@@ -21,12 +21,15 @@
 
   function changeSelectedOption(label: string): void {
     selectedOption = label;
-    addAnswer(selectedOption, question.answer === selectedOption);
+    addAnswer(
+      currentQuestionIndex,
+      selectedOption,
+      question.answer === selectedOption
+    );
   }
 
   function handleNext() {
     if (!selectedOption) return;
-
     if (currentQuestionIndex === totalQuestions - 1) showNextQuestion = false;
 
     currentQuestionIndex++;
@@ -43,6 +46,7 @@
     showNextQuestion = true;
 
     if (currentQuestionIndex === 0) showPrevQuestion = false;
+    selectedOption = $answers[currentQuestionIndex].selectedOption;
   }
 </script>
 
