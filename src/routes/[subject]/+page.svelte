@@ -9,7 +9,7 @@
   <title>{data.subject.name.toUpperCase()}</title>
 </svelte:head>
 
-<div class="p-8 max-w-3xl mx-auto">
+<div class="ps-8 pt-8 max-w-7xl mx-auto">
   <Tabs subject={data.subject.name} />
 </div>
 

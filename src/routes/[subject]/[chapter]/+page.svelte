@@ -19,9 +19,11 @@
   <title>{data.params.chapter.toUpperCase()}</title>
 </svelte:head>
 
-<div class="p-8 max-w-3xl mx-auto space-y-8">
+<div class="ps-8 pt-8 max-w-7xl mx-auto">
   <Tabs subject={data.params.subject} chapter={data.params.chapter} />
+</div>
 
+<div class="p-8 max-w-3xl mx-auto space-y-8">
   {#if hideResults}
     <Quiz {data} bind:hideResults />
   {:else}
