@@ -61,17 +61,40 @@
       </li>
       <li>
         <Link
-          href="/about/who-its-for"
-          text="Who it's for"
-          styles="md:hover:bg-transparent"
-        />
-      </li>
-      <li>
-        <Link
           href="/about/how-it-work"
           text="How it work"
           styles="md:hover:bg-transparent"
         />
+      </li>
+      <li bind:this={li} class="group p-2 relative">
+        <Button
+          onClickHandler={toggleCollapsible}
+          styles="group-[.is-collapsed]:h-28 md:group-[.is-collapsed]:h-auto w-full md:w-auto flex justify-between cursor-pointer"
+        >
+          <span class="md:me-2">Who It's For</span>
+          <i class="ri-arrow-down-s-line"></i>
+        </Button>
+
+        <div
+          class="hidden group-[.is-collapsed]:block absolute bottom-0 right-0 left-0 ms-4 md:group-[.is-collapsed]:ms-0 md:group-[.is-collapsed]:bottom-auto bg-white md:group-[.is-collapsed]:w-36 pt-4"
+        >
+          <ul class="flex flex-col space-y-2 md:space-y-0">
+            <li>
+              <Link
+                href="/"
+                text="student"
+                styles="md:border-b border-b-stone-300 md:p-3"
+              />
+            </li>
+            <li>
+              <Link
+                href="/"
+                text="teacher"
+                styles="md:border-b border-b-stone-300 md:p-3"
+              />
+            </li>
+          </ul>
+        </div>
       </li>
       <li bind:this={li} class="group p-2 relative">
         <Button
@@ -116,6 +139,13 @@
             </li>
           </ul>
         </div>
+      </li>
+      <li>
+        <Link
+          href="/about/how-it-work"
+          text="pricing"
+          styles="md:hover:bg-transparent"
+        />
       </li>
     </ul>
 
