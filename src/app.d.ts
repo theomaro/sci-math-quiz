@@ -26,7 +26,7 @@ declare global {
     id: number;
     text: string;
     answer: string;
-
+    duration: Duration;
     options: Option[];
     notes: string;
     createAt: string;
@@ -37,6 +37,11 @@ declare global {
     id: string;
     label: string;
     text: string;
+  }
+
+  interface Duration {
+    minutes: number;
+    seconds: number;
   }
 
   interface Answer {

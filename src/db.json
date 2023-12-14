@@ -16,6 +16,7 @@
               "id": "9afbbbcf-fe68-3cac-ee9c-cc0370a72535",
               "text": "What does wave transmit from one place to others?",
               "answer": "d",
+              "duration": { "minutes": 1, "seconds": 30 },
               "options": [
                 {
                   "id": "5ff7c29a-4b34-7267-d3dc-f6238a50a822",
@@ -46,6 +47,7 @@
               "id": "f7848acc-00ab-4210-96b7-e49db32fe87f",
               "text": "The particle of the medium vibrates in the transverse wave ...",
               "answer": "a",
+              "duration": { "minutes": 1, "seconds": 30 },
               "options": [
                 {
                   "id": "5ff7c29a-4b34-7267-d3dc-f6238a50a822",
@@ -84,6 +86,7 @@
               "id": "5ba30333-5e44-4786-b036-6d5b2364a394",
               "text": "The particles of the medium vibrate in longitudinal waves …",
               "answer": "b",
+              "duration": { "minutes": 1, "seconds": 30 },
               "options": [
                 {
                   "id": "5ff7c29a-4b34-7267-d3dc-f6238a50a822",
@@ -125,6 +128,7 @@
               "id": "9afbbbcf-fe68-3cac-ee9c-cc0370a72535",
               "text": "The conduction current is the same as the displacement current when the source is ac.",
               "answer": "d",
+              "duration": { "minutes": 1, "seconds": 30 },
               "options": [
                 {
                   "id": "5ff7c29a-4b34-7267-d3dc-f6238a50a822",
@@ -155,6 +159,7 @@
               "id": "89fe4bc9-fd18-41c3-bf38-762e02023bb6",
               "text": "Which of the following proves that electromagnetic waves are transverse?",
               "answer": "d",
+              "duration": { "minutes": 1, "seconds": 30 },
               "options": [
                 {
                   "id": "5ff7c29a-4b34-7267-d3dc-f6238a50a822",
@@ -185,6 +190,7 @@
               "id": "ad5bd467-59e6-42ea-ac43-4cdd11477aa9",
               "text": "According to Maxwell's Hypothesis, a changing electric field gives rise to?",
               "answer": "c",
+              "duration": { "minutes": 1, "seconds": 30 },
               "options": [
                 {
                   "id": "5ff7c29a-4b34-7267-d3dc-f6238a50a822",
@@ -215,6 +221,7 @@
               "id": "b2788222-b31f-420e-829d-8ec1daf5a466",
               "text": "Which of the following waves have a maximum frequency?",
               "answer": "b",
+              "duration": { "minutes": 1, "seconds": 30 },
               "options": [
                 {
                   "id": "5ff7c29a-4b34-7267-d3dc-f6238a50a822",
@@ -244,6 +251,7 @@
               "id": "9afbbbcf-fe68-3cac-ee9c-cc0370a72aaa",
               "text": "What is the phase difference between electric and magnetic fields in an electromagnetic wave?",
               "answer": "b",
+              "duration": { "minutes": 1, "seconds": 30 },
               "options": [
                 {
                   "id": "5ff7c29a-4b34-7267-d3dc-f6238a50a822",
@@ -290,6 +298,7 @@
               "id": "9afbbbcf-fe68-3cac-ee9c-cc0370a72535",
               "text": "What is the first step in the process of plant growth?",
               "answer": "c",
+              "duration": { "minutes": 1, "seconds": 30 },
               "options": [
                 {
                   "id": "5ff7c29a-4b34-7267-d3dc-f6238a50a822",
@@ -320,6 +329,7 @@
               "id": "17d2d403-cc69-4771-bf5a-0464dc9f1837",
               "text": "Development is the sum of how many processes?",
               "answer": "b",
+              "duration": { "minutes": 1, "seconds": 30 },
               "options": [
                 {
                   "id": "5ff7c29a-4b34-7267-d3dc-f6238a50a822",
@@ -349,6 +359,7 @@
               "id": "54ba3887-82b5-4ec7-8382-bf3d46c20075",
               "text": "All the cells of the plant are descendants of which of the following?",
               "answer": "d",
+              "duration": { "minutes": 1, "seconds": 30 },
               "options": [
                 {
                   "id": "5ff7c29a-4b34-7267-d3dc-f6238a50a822",
@@ -386,6 +397,7 @@
               "id": "9afbbbcf-fe68-3cac-ee9c-cc0370a72535",
               "text": "Nature is more important for ______ differences, while nurture has greater influence on ______ differences.",
               "answer": "a",
+              "duration": { "minutes": 1, "seconds": 30 },
               "options": [
                 {
                   "id": "5ff7c29a-4b34-7267-d3dc-f6238a50a822",
@@ -414,6 +426,7 @@
               "id": "54ba3887-82b5-4ec7-8382-bf3d46c20075",
               "text": "The ______ is the set of observable characteristics and is the sum of genetic and environmental effects.",
               "answer": "b",
+              "duration": { "minutes": 1, "seconds": 30 },
               "options": [
                 {
                   "id": "5ff7c29a-4b34-7267-d3dc-f6238a50a822",
@@ -442,6 +455,7 @@
               "id": "92d0cd48-e1e3-4e03-8938-444170ab2208",
               "text": " It is currently estimated that there are ______ human protein-coding genes although this estimate may be reduced over time.",
               "answer": "b",
+              "duration": { "minutes": 1, "seconds": 30 },
               "options": [
                 {
                   "id": "5ff7c29a-4b34-7267-d3dc-f6238a50a822",
@@ -470,6 +484,7 @@
               "id": "2ee91dda-ec1d-43ed-9ca5-d2f04871cc7c",
               "text": " ______ explained genetic disorders such as alkaptonuria and albinism.",
               "answer": "a",
+              "duration": { "minutes": 1, "seconds": 30 },
               "options": [
                 {
                   "id": "5ff7c29a-4b34-7267-d3dc-f6238a50a822",
@@ -499,6 +514,7 @@
               "id": "cffbfd48-5225-4251-95e1-a3ff88b8d023",
               "text": "In humans, each cell normally contains ______ of chromosomes.",
               "answer": "b",
+              "duration": { "minutes": 1, "seconds": 30 },
               "options": [
                 {
                   "id": "5ff7c29a-4b34-7267-d3dc-f6238a50a822",
@@ -544,6 +560,7 @@
               "id": "9afbbbcf-fe68-3cac-ee9c-cc0370a72535",
               "text": "Which of the following is the simplest member of organic compounds?",
               "answer": "c",
+              "duration": { "minutes": 1, "seconds": 30 },
               "options": [
                 {
                   "id": "5ff7c29a-4b34-7267-d3dc-f6238a50a822",
@@ -574,6 +591,7 @@
               "id": "efeda7d5-2b80-b072-87b2-ad3f59948049",
               "text": "Which of the following is yielded when Ethylene glycol is treated with phosphorus tri-iodide?",
               "answer": "a",
+              "duration": { "minutes": 1, "seconds": 30 },
               "options": [
                 {
                   "id": "3d0fd897-6b64-3092-7c95-4db9fba48ff7",
@@ -604,6 +622,7 @@
               "id": "cffbfd48-5225-4251-95e1-a3ff88b8d023",
               "text": "Hydrocarbons are organic compounds with element __________",
               "answer": "a",
+              "duration": { "minutes": 1, "seconds": 30 },
               "options": [
                 {
                   "id": "3d0fd897-6b64-3092-7c95-4db9fba48ff7",
@@ -642,6 +661,7 @@
               "id": "9afbbbcf-fe68-3cac-ee9c-cc0370a72535",
               "text": "Olsen method is used for phosphorus estimation in:",
               "answer": "b",
+              "duration": { "minutes": 1, "seconds": 30 },
               "options": [
                 {
                   "id": "5ff7c29a-4b34-7267-d3dc-f6238a50a822",
@@ -670,6 +690,7 @@
               "id": "cffbfd48-5225-4251-95e1-a3ff88b8d023",
               "text": "Apatite is a group of minerals which mainly contains:",
               "answer": "b",
+              "duration": { "minutes": 1, "seconds": 30 },
               "options": [
                 {
                   "id": "5ff7c29a-4b34-7267-d3dc-f6238a50a822",
@@ -699,6 +720,7 @@
               "id": "34958f53-cfe3-4777-bb65-d6d883b339bb",
               "text": "Which clay mineral is responsible for cracking in black soil?",
               "answer": "d",
+              "duration": { "minutes": 1, "seconds": 30 },
               "options": [
                 {
                   "id": "5ff7c29a-4b34-7267-d3dc-f6238a50a822",
@@ -727,6 +749,7 @@
               "id": "92d0cd48-e1e3-4e03-8938-444170ab2208",
               "text": "Which one is lower category for classification of soil?",
               "answer": "c",
+              "duration": { "minutes": 1, "seconds": 30 },
               "options": [
                 {
                   "id": "5ff7c29a-4b34-7267-d3dc-f6238a50a822",
@@ -772,6 +795,7 @@
               "id": "9afbbbcf-fe68-3cac-ee9c-cc0370a72535",
               "text": "The midpoint of a line segment joining two points A(2, 4) and B(-2, -4) is",
               "answer": "c",
+              "duration": { "minutes": 1, "seconds": 30 },
               "options": [
                 {
                   "id": "5ff7c29a-4b34-7267-d3dc-f6238a50a822",
@@ -801,6 +825,7 @@
               "id": "92d0cd48-e1e3-4e03-8938-444170ab2208",
               "text": "If the distance between the points A(2, -2) and B(-1, x) is equal to 5, then the value of x is:",
               "answer": "a",
+              "duration": { "minutes": 1, "seconds": 30 },
               "options": [
                 {
                   "id": "5ff7c29a-4b34-7267-d3dc-f6238a50a822",
@@ -829,6 +854,7 @@
               "id": "84bc66bf-fc54-436a-b41b-4addf26b91f2",
               "text": "The points (-1, -2), (1, 0), (-1, 2), (-3, 0) form a quadrilateral of type:",
               "answer": "a",
+              "duration": { "minutes": 1, "seconds": 30 },
               "options": [
                 {
                   "id": "5ff7c29a-4b34-7267-d3dc-f6238a50a822",
@@ -865,6 +891,7 @@
               "id": "9afbbbcf-fe68-3cac-ee9c-cc0370a72535",
               "text": "The linear inequalities or equations or restrictions on the variables of a linear programming problem are called:",
               "answer": "a",
+              "duration": { "minutes": 1, "seconds": 30 },
               "options": [
                 {
                   "id": "5ff7c29a-4b34-7267-d3dc-f6238a50a822",
@@ -893,6 +920,7 @@
               "id": "84bc66bf-fc54-436a-b41b-4addf26b91f2",
               "text": "The objective function of a linear programming problem is:",
               "answer": "b",
+              "duration": { "minutes": 1, "seconds": 30 },
               "options": [
                 {
                   "id": "5ff7c29a-4b34-7267-d3dc-f6238a50a822",
@@ -921,6 +949,7 @@
               "id": "9597b68b-13e9-4483-b1e7-25b5df40ec03",
               "text": "Region represented by x ≥ 0, y ≥ 0 is:",
               "answer": "a",
+              "duration": { "minutes": 1, "seconds": 30 },
               "options": [
                 {
                   "id": "5ff7c29a-4b34-7267-d3dc-f6238a50a822",
@@ -951,6 +980,7 @@
               "id": "d7e35500-21aa-47a5-bc97-f172a52bf039",
               "text": "The maximum value of Z = 3x + 4y subjected to constraints x + y ≤ 4, x ≥ 0 and y ≥ 0 is:",
               "answer": "c",
+              "duration": { "minutes": 1, "seconds": 30 },
               "options": [
                 {
                   "id": "5ff7c29a-4b34-7267-d3dc-f6238a50a822",
@@ -980,6 +1010,7 @@
               "id": "0d56d721-1c4c-4e4c-af59-3c981a46e48f",
               "text": "The minimum value of Z = 3x + 5y subjected to constraints x + 3y ≥ 3, x + y ≥ 2, x, y ≥ 0 is:",
               "answer": "b",
+              "duration": { "minutes": 1, "seconds": 30 },
               "options": [
                 {
                   "id": "5ff7c29a-4b34-7267-d3dc-f6238a50a822",
@@ -1009,6 +1040,7 @@
               "id": "f8db90fa-dae3-4e75-bce7-05fcd9bb460a",
               "text": "The optimal value of the objective function is attained at the points ",
               "answer": "c",
+              "duration": { "minutes": 1, "seconds": 30 },
               "options": [
                 {
                   "id": "5ff7c29a-4b34-7267-d3dc-f6238a50a822",
