@@ -20,7 +20,21 @@
   let canStartPlay: boolean = false;
 
   $: question = data.chapter.questions[currentQuestionIndex];
-  $: duration = question.duration;
+  $: totalDuration = (): Duration => {
+    let minutes = data.chapter.questions
+      .map((question) => question.duration.minutes)
+      .reduce((a, x) => a + x);
+    let seconds = data.chapter.questions
+      .map((question) => question.duration.seconds)
+      .reduce((a, x) => a + x);
+
+    let setTime = seconds * 1000 + minutes * 60 * 1000;
+    // convert remaining time from milliseconds into mins and secs
+    minutes = Math.floor((setTime / (1000 * 60)) % 60);
+    seconds = Math.floor((setTime / 1000) % 60);
+
+    return { minutes, seconds };
+  };
 
   function changeSelectedOption(label: string): void {
     selectedOption = label;
@@ -72,7 +86,7 @@
 {#if canStartPlay}
   <section>
     <div class="-mt-5 mb-5">
-      <Timer bind:canStartPlay {formatTimer} {duration} />
+      <Timer bind:canStartPlay {formatTimer} {totalDuration} />
     </div>
 
     <div class="flex justify-between gap-8 mb-5 relative">
@@ -122,8 +136,8 @@
   <section class="flex flex-col space-y-16">
     <div class="space-y-1">
       <p>
-        Duration: {formatTimer(duration.minutes)}:{formatTimer(
-          duration.seconds
+        Duration: {formatTimer(totalDuration().minutes)}:{formatTimer(
+          totalDuration().seconds
         )}
       </p>
       <p>Total question: {totalQuestions}</p>

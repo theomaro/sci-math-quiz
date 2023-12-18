@@ -1,13 +1,13 @@
 <script lang="ts">
   export let formatTimer: (time: number, min: number) => void;
   export let canStartPlay: boolean;
-  export let duration: Duration;
+  export let totalDuration: () => Duration;
 
   let textColor: string = "";
 
   // set up time input
-  let mins = duration.minutes;
-  let secs = duration.seconds;
+  let mins = totalDuration().minutes;
+  let secs = totalDuration().seconds;
 
   // convert time input into milliseconds
   const minsInMilliseconds = mins * 60 * 1000;
