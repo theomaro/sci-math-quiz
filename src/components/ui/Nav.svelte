@@ -75,7 +75,7 @@
           <Link href="/" text="How it work" styles="md:hover:bg-transparent" />
         </button>
       </li>
-      <li bind:this={li} class="group p-2 relative">
+      <li bind:this={li} class="group py-2 relative">
         <Button
           onClickHandler={toggleCollapsible}
           styles="group-[.is-collapsed]:h-28 md:group-[.is-collapsed]:h-auto md:w-auto flex justify-between gap-2 cursor-pointer"
@@ -109,7 +109,7 @@
           </ul>
         </div>
       </li>
-      <li bind:this={li} class="group p-2 relative">
+      <li bind:this={li} class="group py-2 relative">
         <Button
           onClickHandler={toggleCollapsible}
           styles="group-[.is-collapsed]:h-48 md:group-[.is-collapsed]:h-auto md:w-auto flex justify-between gap-2 cursor-pointer"
