@@ -11,38 +11,27 @@
   function showMenu(
     e: MouseEvent & { currentTarget: EventTarget & HTMLButtonElement }
   ) {
-    let parent = e.currentTarget.parentElement;
-    parent?.classList.add("show");
+    let parent = e.currentTarget.parentElement as HTMLElement;
+    parent.classList.add("show");
   }
 
-  function hideMenu(
-    e: MouseEvent & { currentTarget: EventTarget & HTMLButtonElement }
-  ) {
-    let parent = e.currentTarget.parentElement;
-    parent?.classList.remove("show");
-  }
+  const hideMenu = () => removeNavigation();
 
-  function dispatchResize(
+  const dispatchResize = (
     e: UIEvent & { currentTarget: EventTarget & Window }
-  ) {
-    let window = e.currentTarget;
-    if (window.innerWidth > 768) {
-      nav.classList.remove("show");
-      li.classList.remove("is-collapsed");
-    }
-  }
+  ) => e.currentTarget.innerWidth > 768 && removeNavigation();
 
   function toggleCollapsible(
-    event: MouseEvent & { currentTarget: EventTarget & HTMLButtonElement }
+    e: MouseEvent & { currentTarget: EventTarget & HTMLButtonElement }
   ) {
-    const lis = nav.querySelectorAll("li");
-    lis.forEach((li) => li.classList.remove("is-collapsed"));
+    const targetLI = e.currentTarget.parentElement as HTMLElement;
+    const lis = nav.querySelectorAll(".is-collapsed");
 
-    const targetLI = event.currentTarget.parentElement as HTMLElement;
-    targetLI.classList.add("is-collapsed");
+    lis.forEach((li) => li.classList.remove("is-collapsed"));
+    targetLI.classList.toggle("is-collapsed");
   }
 
-  function removeNavigationOnClick() {
+  function removeNavigation() {
     nav.classList.remove("show");
     const lis = nav.querySelectorAll("li");
     lis.forEach((li) => li.classList.remove("is-collapsed"));
@@ -66,22 +55,22 @@
   >
     <ul class="flex flex-col space-y-3 md:space-y-0 md:flex-row md:space-x-8">
       <li>
-        <button on:click={removeNavigationOnClick} class="w-full text-start">
+        <button on:click={removeNavigation} class="w-full text-start">
           <Link text="home" styles="md:hover:bg-transparent" />
         </button>
       </li>
       <li>
-        <button on:click={removeNavigationOnClick} class="w-full text-start">
+        <button on:click={removeNavigation} class="w-full text-start">
           <Link href="/" text="How it work" styles="md:hover:bg-transparent" />
         </button>
       </li>
       <li bind:this={li} class="group py-2 relative">
         <Button
           onClickHandler={toggleCollapsible}
-          styles="group-[.is-collapsed]:h-28 md:group-[.is-collapsed]:h-auto md:w-auto flex justify-between gap-2 cursor-pointer"
+          styles="group-[.is-collapsed]:h-28 md:group-[.is-collapsed]:h-auto md:w-auto flex w-full gap-2 cursor-pointer"
         >
           <span class="md:me-2">Who It's For</span>
-          <i class="ri-arrow-down-s-line"></i>
+          <i class="ri-arrow-down-s-line ms-auto"></i>
         </Button>
 
         <div
@@ -89,7 +78,7 @@
         >
           <ul class="flex flex-col space-y-2 md:space-y-0">
             <li>
-              <button on:click={removeNavigationOnClick} class="w-full text-start">
+              <button on:click={removeNavigation} class="w-full text-start">
                 <Link
                   href="/"
                   text="student"
@@ -98,7 +87,7 @@
               </button>
             </li>
             <li>
-              <button on:click={removeNavigationOnClick} class="w-full text-start">
+              <button on:click={removeNavigation} class="w-full text-start">
                 <Link
                   href="/"
                   text="teacher"
@@ -112,10 +101,10 @@
       <li bind:this={li} class="group py-2 relative">
         <Button
           onClickHandler={toggleCollapsible}
-          styles="group-[.is-collapsed]:h-48 md:group-[.is-collapsed]:h-auto md:w-auto flex justify-between gap-2 cursor-pointer"
+          styles="group-[.is-collapsed]:h-48 md:group-[.is-collapsed]:h-auto md:w-auto flex w-full gap-2 cursor-pointer"
         >
           <span class="md:me-2">Quizzes</span>
-          <i class="ri-arrow-down-s-line"></i>
+          <i class="ri-arrow-down-s-line ms-auto"></i>
         </Button>
 
         <div
@@ -123,7 +112,7 @@
         >
           <ul class="flex flex-col space-y-2 md:space-y-0">
             <li>
-              <button on:click={removeNavigationOnClick} class="w-full text-start">
+              <button on:click={removeNavigation} class="w-full text-start">
                 <Link
                   href="/physics"
                   text="physics"
@@ -132,7 +121,7 @@
               </button>
             </li>
             <li>
-              <button on:click={removeNavigationOnClick} class="w-full text-start">
+              <button on:click={removeNavigation} class="w-full text-start">
                 <Link
                   href="/biology"
                   text="biology"
@@ -141,7 +130,7 @@
               </button>
             </li>
             <li>
-              <button on:click={removeNavigationOnClick} class="w-full text-start">
+              <button on:click={removeNavigation} class="w-full text-start">
                 <Link
                   href="/chemistry"
                   text="chemistry"
@@ -150,7 +139,7 @@
               </button>
             </li>
             <li>
-              <button on:click={removeNavigationOnClick} class="w-full text-start">
+              <button on:click={removeNavigation} class="w-full text-start">
                 <Link
                   href="/basic-mathematics"
                   text="mathematics"
@@ -162,7 +151,7 @@
         </div>
       </li>
       <li>
-        <button on:click={removeNavigationOnClick} class="w-full text-start">
+        <button on:click={removeNavigation} class="w-full text-start">
           <Link href="/" text="pricing" styles="md:hover:bg-transparent" />
         </button>
       </li>
