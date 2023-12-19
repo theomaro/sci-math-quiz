@@ -1,11 +1,7 @@
 <script lang="ts">
-  import { goto } from "$app/navigation";
-
   import { answers } from "../../../../store";
 
   import Button from "../../../../components/ui/Button.svelte";
-  import AnswerItem from "./AnswerItem.svelte";
-  import ResultsCard from "./ResultsCard.svelte";
   import AnswerCorrect from "./AnswerCorrect.svelte";
 
   export let data: {
@@ -19,14 +15,13 @@
     (answer) => answer.isCorrect === true
   ).length;
   let percent = Math.ceil((totalCorrectAnswer / totalQuestions) * 100);
+  $: colorPercentage = percent < 45 ? "red" : percent > 65 ? "emerald" : "gray";
+  $: textPercentage =
+    percent < 45 ? "Poor" : percent > 65 ? "excellent" : "average";
 
   function handleRestart() {
     hideResults = true;
     answers.set([]);
-  }
-
-  function goBack() {
-    goto(`/${data.params.subject}`);
   }
 
   function toggleAnswers(
@@ -44,43 +39,70 @@
   }
 </script>
 
-<article class="pb-8 border-b-2">
-  <p class="font-bold text-gray-400 tracking-tight capitalize mb-3 md:text-2xl">
-    <span class="text-amber-600">{totalCorrectAnswer}</span>
-    <span class="text-gray-500">/{totalQuestions}</span> Questions answered correctly
-  </p>
+<article class="flex justify-between items-center">
+  <div class="text-xl text-gray-600 font-medium flex items-center gap-3">
+    <div
+      class="flex items-center justify-center w-14 h-14 rounded-full border-4 border-{colorPercentage}-600"
+    >
+      <span>{totalCorrectAnswer}</span>
+      <span>/{totalQuestions}</span>
+    </div>
 
-  <div class="shadow rounded-lg bg-white p-6 md:p-12 space-y-10 md:space-y-16">
-    <ResultsCard {percent} {handleRestart} {goBack} />
+    <div>
+      <h4
+        class="text-sm text-{colorPercentage}-600 font-medium flex items-center gap-1"
+      >
+        Score
+        <span
+          class="inline-block w-1 h-1 mt-1 rounded-full text-lg bg-{colorPercentage}-600"
+        ></span>
+        <span>{percent}%</span>
+      </h4>
+
+      <p class="text-base capitalize">{textPercentage}</p>
+    </div>
   </div>
+
+  <Button
+    text="play again"
+    onClickHandler={handleRestart}
+    styles="px-3 rounded-full py-2 capitalize bg-sky-600 text-xs text-white font-medium"
+  />
 </article>
 
 <article class="group show-answers">
   <Button
     onClickHandler={toggleAnswers}
     text="answers"
-    styles="capitalize font-bold text-xl text-sky-900 flex justify-between items-center w-full py-1 mb-3"
+    styles="capitalize font-bold text-xl text-sky-900 flex justify-between items-center w-full py-1 mb-4"
   >
-    <i class="ri-arrow-up-s-line group-[.show-answers]:rotate-180"></i>
+    <i class="ri-arrow-down-s-line group-[.show-answers]:rotate-180"></i>
   </Button>
 
-  <ol class="hidden group-[.show-answers]:flex flex-col space-y-4">
+  <ol class="hidden group-[.show-answers]:flex flex-col text-sm">
     {#each data.chapter.questions as question, i (question.id)}
-      <li class="group">
+      <li
+        class="group border border-b-0 last-of-type:border-b border-slate-300 rounded p-4 md:px-6"
+      >
         <Button
           onClickHandler={toggleAnswer}
-          styles="flex items-start md:items-center py-1 mb-3 w-full gap-3 text-start text-slate-700 leading-snug"
+          styles="flex w-full gap-2 text-start text-slate-700 group-[.show-answer]:border-b group-[.show-answers]:border-b-slate-300 group-[.show-answer]:pb-2"
         >
-          <span>{i + 1}.</span>
-          <p class="first-letter:capitalize">{question.text}</p>
           <i
-            class="ri-arrow-up-s-line text-xl ms-auto group-[.show-answer]:rotate-180"
+            class="font-bold text-lg -mt-1 {$answers[i].isCorrect
+              ? 'ri-check-line text-green-600'
+              : 'ri-close-line text-red-600'}"
+          ></i>
+
+          <p class="first-letter:capitalize">{question.text}</p>
+
+          <i
+            class="ri-arrow-down-s-line text-lg ms-auto -mt-1 group-[.show-answer]:self-start group-[.show-answer]:rotate-180"
           ></i>
         </Button>
 
         <div class="hidden group-[.show-answer]:block">
-          <AnswerItem index={i} notes={question.notes} />
-          <AnswerCorrect {question} />
+          <AnswerCorrect answer={$answers[i]} {question} />
         </div>
       </li>
     {/each}

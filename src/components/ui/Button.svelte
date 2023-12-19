@@ -7,7 +7,7 @@
   export let styles: string = "";
 </script>
 
-<button on:click={onClickHandler} class={styles}
-  >{text}
+<button on:click={onClickHandler} class={styles}>
+  <p>{text}</p>
   <slot />
 </button>

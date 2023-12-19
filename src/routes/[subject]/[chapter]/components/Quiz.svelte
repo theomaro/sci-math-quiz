@@ -106,16 +106,25 @@
       <QuestionText {question} />
     </div>
 
-    <ul class="flex flex-col space-y-5">
+    <ul class="flex flex-col space-y-4">
       {#each question.options as option (option.id)}
         <li>
           <Button
             text={option.text}
             onClickHandler={() => changeSelectedOption(option.label)}
-            styles={`border border-sky-900 rounded-lg py-1.5 px-4 text-sm w-full flex justify-between text-start cursor-pointer text-sky-900 capitalize ${
-              selectedOption === option.label ? "text-sky-600 bg-sky-100" : ""
-            }`}
-          />
+            styles="capitalize text-start text-sky-800 border-sky-900 border rounded-lg py-1.5 px-4 text-sm w-full flex justify-between  cursor-pointer {selectedOption !==
+            option.label
+              ? ''
+              : 'border-green-700'}"
+          >
+            <p
+              class="{selectedOption !== option.label
+                ? 'hidden'
+                : ''} w-5 h-5 rounded-full border-2 border-green-500 flex items-center justify-center"
+            >
+              <i class="ri-check-fill text-lg text-green-500 font-bold"></i>
+            </p>
+          </Button>
         </li>
       {/each}
     </ul>
