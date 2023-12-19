@@ -38,8 +38,8 @@
     const lis = nav.querySelectorAll("li");
     lis.forEach((li) => li.classList.remove("is-collapsed"));
 
-    const li = event.currentTarget.parentElement;
-    li?.classList.toggle("is-collapsed");
+    const targetLI = event.currentTarget.parentElement as HTMLElement;
+    targetLI.classList.add("is-collapsed");
   }
 
   function removeNavigationOnClick() {
@@ -66,12 +66,12 @@
   >
     <ul class="flex flex-col space-y-3 md:space-y-0 md:flex-row md:space-x-8">
       <li>
-        <button on:click={removeNavigationOnClick} class="w-full">
+        <button on:click={removeNavigationOnClick} class="w-full text-start">
           <Link text="home" styles="md:hover:bg-transparent" />
         </button>
       </li>
       <li>
-        <button on:click={removeNavigationOnClick} class="w-full">
+        <button on:click={removeNavigationOnClick} class="w-full text-start">
           <Link href="/" text="How it work" styles="md:hover:bg-transparent" />
         </button>
       </li>
@@ -89,7 +89,7 @@
         >
           <ul class="flex flex-col space-y-2 md:space-y-0">
             <li>
-              <button on:click={removeNavigationOnClick} class="w-full">
+              <button on:click={removeNavigationOnClick} class="w-full text-start">
                 <Link
                   href="/"
                   text="student"
@@ -98,7 +98,7 @@
               </button>
             </li>
             <li>
-              <button on:click={removeNavigationOnClick} class="w-full">
+              <button on:click={removeNavigationOnClick} class="w-full text-start">
                 <Link
                   href="/"
                   text="teacher"
@@ -123,7 +123,7 @@
         >
           <ul class="flex flex-col space-y-2 md:space-y-0">
             <li>
-              <button on:click={removeNavigationOnClick} class="w-full">
+              <button on:click={removeNavigationOnClick} class="w-full text-start">
                 <Link
                   href="/physics"
                   text="physics"
@@ -132,7 +132,7 @@
               </button>
             </li>
             <li>
-              <button on:click={removeNavigationOnClick} class="w-full">
+              <button on:click={removeNavigationOnClick} class="w-full text-start">
                 <Link
                   href="/biology"
                   text="biology"
@@ -141,7 +141,7 @@
               </button>
             </li>
             <li>
-              <button on:click={removeNavigationOnClick} class="w-full">
+              <button on:click={removeNavigationOnClick} class="w-full text-start">
                 <Link
                   href="/chemistry"
                   text="chemistry"
@@ -150,7 +150,7 @@
               </button>
             </li>
             <li>
-              <button on:click={removeNavigationOnClick} class="w-full">
+              <button on:click={removeNavigationOnClick} class="w-full text-start">
                 <Link
                   href="/basic-mathematics"
                   text="mathematics"
@@ -162,7 +162,7 @@
         </div>
       </li>
       <li>
-        <button on:click={removeNavigationOnClick} class="w-full">
+        <button on:click={removeNavigationOnClick} class="w-full text-start">
           <Link href="/" text="pricing" styles="md:hover:bg-transparent" />
         </button>
       </li>
