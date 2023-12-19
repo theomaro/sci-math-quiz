@@ -35,8 +35,17 @@
   function toggleCollapsible(
     event: MouseEvent & { currentTarget: EventTarget & HTMLButtonElement }
   ) {
+    const lis = nav.querySelectorAll("li");
+    lis.forEach((li) => li.classList.remove("is-collapsed"));
+
     const li = event.currentTarget.parentElement;
     li?.classList.toggle("is-collapsed");
+  }
+
+  function removeNavigationOnClick() {
+    nav.classList.remove("show");
+    const lis = nav.querySelectorAll("li");
+    lis.forEach((li) => li.classList.remove("is-collapsed"));
   }
 </script>
 
@@ -57,22 +66,22 @@
   >
     <ul class="flex flex-col space-y-3 md:space-y-0 md:flex-row md:space-x-8">
       <li>
-        <Link text="home" styles="md:hover:bg-transparent" />
+        <button on:click={removeNavigationOnClick} class="w-full">
+          <Link text="home" styles="md:hover:bg-transparent" />
+        </button>
       </li>
       <li>
-        <Link
-          href="/about/how-it-work"
-          text="How it work"
-          styles="md:hover:bg-transparent"
-        />
+        <button on:click={removeNavigationOnClick} class="w-full">
+          <Link href="/" text="How it work" styles="md:hover:bg-transparent" />
+        </button>
       </li>
       <li bind:this={li} class="group p-2 relative">
         <Button
           onClickHandler={toggleCollapsible}
-          styles="group-[.is-collapsed]:h-28 md:group-[.is-collapsed]:h-auto md:w-auto flex justify-between cursor-pointer"
+          styles="group-[.is-collapsed]:h-28 md:group-[.is-collapsed]:h-auto md:w-auto flex justify-between gap-2 cursor-pointer"
         >
           <span class="md:me-2">Who It's For</span>
-          <i class="ri-arrow-down-s-line me-auto"></i>
+          <i class="ri-arrow-down-s-line"></i>
         </Button>
 
         <div
@@ -80,18 +89,22 @@
         >
           <ul class="flex flex-col space-y-2 md:space-y-0">
             <li>
-              <Link
-                href="/"
-                text="student"
-                styles="md:border-b border-b-stone-300 md:p-3"
-              />
+              <button on:click={removeNavigationOnClick} class="w-full">
+                <Link
+                  href="/"
+                  text="student"
+                  styles="md:border-b border-b-stone-300 md:p-3"
+                />
+              </button>
             </li>
             <li>
-              <Link
-                href="/"
-                text="teacher"
-                styles="md:border-b border-b-stone-300 md:p-3"
-              />
+              <button on:click={removeNavigationOnClick} class="w-full">
+                <Link
+                  href="/"
+                  text="teacher"
+                  styles="md:border-b border-b-stone-300 md:p-3"
+                />
+              </button>
             </li>
           </ul>
         </div>
@@ -99,7 +112,7 @@
       <li bind:this={li} class="group p-2 relative">
         <Button
           onClickHandler={toggleCollapsible}
-          styles="group-[.is-collapsed]:h-48 md:group-[.is-collapsed]:h-auto md:w-auto flex justify-between cursor-pointer"
+          styles="group-[.is-collapsed]:h-48 md:group-[.is-collapsed]:h-auto md:w-auto flex justify-between gap-2 cursor-pointer"
         >
           <span class="md:me-2">Quizzes</span>
           <i class="ri-arrow-down-s-line"></i>
@@ -110,42 +123,48 @@
         >
           <ul class="flex flex-col space-y-2 md:space-y-0">
             <li>
-              <Link
-                href="/physics"
-                text="physics"
-                styles="md:border-b border-b-stone-300 md:p-3"
-              />
+              <button on:click={removeNavigationOnClick} class="w-full">
+                <Link
+                  href="/physics"
+                  text="physics"
+                  styles="md:border-b border-b-stone-300 md:p-3"
+                />
+              </button>
             </li>
             <li>
-              <Link
-                href="/biology"
-                text="biology"
-                styles="md:border-b border-b-stone-300 md:p-3"
-              />
+              <button on:click={removeNavigationOnClick} class="w-full">
+                <Link
+                  href="/biology"
+                  text="biology"
+                  styles="md:border-b border-b-stone-300 md:p-3"
+                />
+              </button>
             </li>
             <li>
-              <Link
-                href="/chemistry"
-                text="chemistry"
-                styles="md:border-b border-b-stone-300 md:p-3"
-              />
+              <button on:click={removeNavigationOnClick} class="w-full">
+                <Link
+                  href="/chemistry"
+                  text="chemistry"
+                  styles="md:border-b border-b-stone-300 md:p-3"
+                />
+              </button>
             </li>
             <li>
-              <Link
-                href="/basic-mathematics"
-                text="mathematics"
-                styles=" md:p-3"
-              />
+              <button on:click={removeNavigationOnClick} class="w-full">
+                <Link
+                  href="/basic-mathematics"
+                  text="mathematics"
+                  styles=" md:p-3"
+                />
+              </button>
             </li>
           </ul>
         </div>
       </li>
       <li>
-        <Link
-          href="/about/how-it-work"
-          text="pricing"
-          styles="md:hover:bg-transparent"
-        />
+        <button on:click={removeNavigationOnClick} class="w-full">
+          <Link href="/" text="pricing" styles="md:hover:bg-transparent" />
+        </button>
       </li>
     </ul>
 
