@@ -7,7 +7,10 @@
   export let styles: string = "";
 </script>
 
-<button on:click={onClickHandler} class={styles}>
+<button
+  on:click={onClickHandler}
+  class={`focus:bg-transparent focus-within:bg-transparent active:bg-transparent ${styles}`}
+>
   <p>{text}</p>
   <slot />
 </button>

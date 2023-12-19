@@ -6,7 +6,7 @@
 
 <a
   {href}
-  class={`p-2 inline-block w-full hover:bg-red-50 hover:rounded md:hover:rounded-none capitalize ${styles}`}
+  class={`p-2 inline-block w-full hover:bg-red-50 hover:rounded md:hover:rounded-none capitalize focus:bg-transparent focus-within:bg-transparent active:bg-transparent ${styles}`}
 >
   {text}
   <slot />
