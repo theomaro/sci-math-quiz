@@ -69,10 +69,10 @@
       <li bind:this={li} class="group p-2 relative">
         <Button
           onClickHandler={toggleCollapsible}
-          styles="group-[.is-collapsed]:h-28 md:group-[.is-collapsed]:h-auto w-full md:w-auto flex justify-between cursor-pointer"
+          styles="group-[.is-collapsed]:h-28 md:group-[.is-collapsed]:h-auto md:w-auto flex justify-between cursor-pointer"
         >
           <span class="md:me-2">Who It's For</span>
-          <i class="ri-arrow-down-s-line"></i>
+          <i class="ri-arrow-down-s-line me-auto"></i>
         </Button>
 
         <div
@@ -99,7 +99,7 @@
       <li bind:this={li} class="group p-2 relative">
         <Button
           onClickHandler={toggleCollapsible}
-          styles="group-[.is-collapsed]:h-48 md:group-[.is-collapsed]:h-auto w-full md:w-auto flex justify-between cursor-pointer"
+          styles="group-[.is-collapsed]:h-48 md:group-[.is-collapsed]:h-auto md:w-auto flex justify-between cursor-pointer"
         >
           <span class="md:me-2">Quizzes</span>
           <i class="ri-arrow-down-s-line"></i>

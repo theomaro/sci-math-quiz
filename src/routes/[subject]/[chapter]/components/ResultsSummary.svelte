@@ -82,7 +82,7 @@
   <ol class="hidden group-[.show-answers]:flex flex-col text-sm">
     {#each data.chapter.questions as question, i (question.id)}
       <li
-        class="group border border-b-0 last-of-type:border-b border-slate-300 rounded p-4 md:px-6"
+        class="group border border-b-0 last-of-type:border-b border-slate-300 first-of-type:rounded-t-md last-of-type:rounded-b-md p-4 md:px-6"
       >
         <Button
           onClickHandler={toggleAnswer}
@@ -101,7 +101,7 @@
           ></i>
         </Button>
 
-        <div class="hidden group-[.show-answer]:block">
+        <div class="hidden group-[.show-answer]:block ms-2">
           <AnswerCorrect answer={$answers[i]} {question} />
         </div>
       </li>

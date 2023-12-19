@@ -16,14 +16,14 @@
     ? 'last-of-type:border-none pb-0'
     : ''} border-b border-b-slate-300 flex flex-col gap-2"
 >
-  <div class="text-green-500 flex gap-2">
-    <span class="ri-check-line"></span>
+  <div class="text-green-500 flex items-center gap-2">
+    <span class="ri-check-line text-lg"></span>
     <span class="flex-1">{correctOption[0].text}</span>
   </div>
 
   {#if !answer.isCorrect}
-    <div class="text-red-500 flex gap-2">
-      <span class="ri-close-line"></span>
+    <div class="text-red-500 flex items-center gap-2">
+      <span class="ri-close-line text-lg"></span>
       <span class="flex-1">
         {incorrectOption[0].text}
       </span>
