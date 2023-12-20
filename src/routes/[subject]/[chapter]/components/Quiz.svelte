@@ -2,8 +2,6 @@
   import { addAnswer, answers } from "../../../../store";
 
   import Button from "../../../../components/ui/Button.svelte";
-  import ProgressBar from "./ProgressBar.svelte";
-  import QuestionText from "./QuestionText.svelte";
   import Timer from "../../../../components/ui/Timer.svelte";
 
   export let data: {
@@ -90,7 +88,13 @@
     </div>
 
     <div class="flex justify-between gap-8 mb-5 relative">
-      <ProgressBar {currentQuestionIndex} {totalQuestions} />
+      <p
+        class="font-bold text-gray-700 text-lg border-b border-dashed border-b-lime-500 flex-1 py-1"
+      >
+        Question {currentQuestionIndex + 1}<span class="text-gray-500 text-sm"
+          >/{totalQuestions}</span
+        >
+      </p>
 
       {#if showPrevQuestion}
         <Button
@@ -103,7 +107,11 @@
     </div>
 
     <div class="h-32">
-      <QuestionText {question} />
+      <h2
+        class="text-lg first-letter:uppercase font-bold leading-tight tracking-tight"
+      >
+        {question.text}
+      </h2>
     </div>
 
     <ul class="flex flex-col space-y-4">

@@ -9,7 +9,7 @@
 
 <button
   on:click={onClickHandler}
-  class={`focus:bg-transparent focus-within:bg-transparent active:bg-transparent ${styles}`}
+  class={`${styles}`}
 >
   <p>{text}</p>
   <slot />

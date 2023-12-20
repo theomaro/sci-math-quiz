@@ -2,7 +2,7 @@
   import { answers } from "../../../../store";
 
   import Button from "../../../../components/ui/Button.svelte";
-  import AnswerCorrect from "./AnswerCorrect.svelte";
+  import AnswerResult from "./AnswerResult.svelte";
 
   export let data: {
     chapter: Chapter;
@@ -102,7 +102,7 @@
         </Button>
 
         <div class="hidden group-[.show-answer]:block ms-2">
-          <AnswerCorrect answer={$answers[i]} {question} />
+          <AnswerResult answer={$answers[i]} {question} />
         </div>
       </li>
     {/each}
