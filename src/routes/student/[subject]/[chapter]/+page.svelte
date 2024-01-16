@@ -1,9 +1,11 @@
 <script lang="ts">
   import { onMount } from "svelte";
-  import Tabs from "../../../components/ui/Tabs.svelte";
-  import { answers } from "../../../store";
-  import Quiz from "./components/Quiz.svelte";
+
+  import { answers } from "../../../../store";
+
+  import Tabs from "../../../../components/student/Tabs.svelte";
   import ResultsSummary from "./components/ResultsSummary.svelte";
+  import Quiz from "./components/Quiz.svelte";
 
   export let data: {
     chapter: Chapter;

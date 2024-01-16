@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { goto } from "$app/navigation";
   import Button from "./Button.svelte";
   import Link from "./Link.svelte";
 
@@ -54,11 +53,11 @@
     class="hidden group-[.show]:block px-6 pb-8 pt-7 shadow-md md:shadow-none text-sm absolute top-full right-0 left-0 z-10 md:p-0 md:static space-y-4 md:space-y-0 bg-white border-t md:border-t-0 md:bg-transparent text-start md:flex md:flex-1 md:ms-16"
   >
     <ul class="flex flex-col space-y-3 md:space-y-0 md:flex-row md:space-x-8">
-      <li>
+      <!-- <li>
         <button on:click={removeNavigation} class="w-full text-start">
           <Link text="home" styles="md:hover:bg-transparent" />
         </button>
-      </li>
+      </li> -->
       <li>
         <button on:click={removeNavigation} class="w-full text-start">
           <Link href="/" text="How it work" styles="md:hover:bg-transparent" />
@@ -80,7 +79,7 @@
             <li>
               <button on:click={removeNavigation} class="w-full text-start">
                 <Link
-                  href="/"
+                  href="/student"
                   text="student"
                   styles="md:border-b border-b-stone-300 md:p-3"
                 />
@@ -89,61 +88,9 @@
             <li>
               <button on:click={removeNavigation} class="w-full text-start">
                 <Link
-                  href="/"
+                  href="/teacher"
                   text="teacher"
                   styles="md:border-b border-b-stone-300 md:p-3"
-                />
-              </button>
-            </li>
-          </ul>
-        </div>
-      </li>
-      <li bind:this={li} class="group py-2 relative">
-        <Button
-          onClickHandler={toggleCollapsible}
-          styles="group-[.is-collapsed]:h-48 md:group-[.is-collapsed]:h-auto md:w-auto flex w-full gap-2 cursor-pointer"
-        >
-          <span class="md:me-2">Quizzes</span>
-          <i class="ri-arrow-down-s-line ms-auto"></i>
-        </Button>
-
-        <div
-          class="hidden group-[.is-collapsed]:block absolute bottom-0 right-0 left-0 ms-4 md:group-[.is-collapsed]:ms-0 md:group-[.is-collapsed]:bottom-auto bg-white md:group-[.is-collapsed]:w-36 pt-4"
-        >
-          <ul class="flex flex-col space-y-2 md:space-y-0">
-            <li>
-              <button on:click={removeNavigation} class="w-full text-start">
-                <Link
-                  href="/physics"
-                  text="physics"
-                  styles="md:border-b border-b-stone-300 md:p-3"
-                />
-              </button>
-            </li>
-            <li>
-              <button on:click={removeNavigation} class="w-full text-start">
-                <Link
-                  href="/biology"
-                  text="biology"
-                  styles="md:border-b border-b-stone-300 md:p-3"
-                />
-              </button>
-            </li>
-            <li>
-              <button on:click={removeNavigation} class="w-full text-start">
-                <Link
-                  href="/chemistry"
-                  text="chemistry"
-                  styles="md:border-b border-b-stone-300 md:p-3"
-                />
-              </button>
-            </li>
-            <li>
-              <button on:click={removeNavigation} class="w-full text-start">
-                <Link
-                  href="/basic-mathematics"
-                  text="mathematics"
-                  styles=" md:p-3"
                 />
               </button>
             </li>
@@ -156,22 +103,6 @@
         </button>
       </li>
     </ul>
-
-    <div
-      class="flex flex-col px-2 space-y-6 md:space-y-0 md:flex-row md:space-x-6 md:ms-auto"
-    >
-      <Button
-        onClickHandler={() => goto("/user/login")}
-        text="login"
-        styles="p-2 inline-block w-full bg-white text-lime-800 font-bold capitalize ring-1 ring-lime-700 rounded cursor-pointer hover:bg-lime-700 hover:text-white md:px-4"
-      />
-
-      <Button
-        onClickHandler={() => goto("/user/signup")}
-        text="signup"
-        styles="p-2 inline-block w-full bg-lime-700 text-white font-bold capitalize ring-1 ring-lime-700 rounded cursor-pointer md:px-4 hover:bg-white hover:text-lime-800"
-      />
-    </div>
   </div>
 
   <Button

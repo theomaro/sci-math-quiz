@@ -1,6 +1,6 @@
 <script lang="ts">
   import { goto } from "$app/navigation";
-  import Button from "./Button.svelte";
+  import Button from "../ui/Button.svelte";
 
   export let url: string = "";
   export let name: string = "Card Title";
@@ -13,7 +13,7 @@
   styles="quiz-card overflow-hidden w-full shadow rounded cursor-pointer"
 >
   {#if imageUrl}
-    <img src={imageUrl} alt="" class="h-60 w-full" />
+    <img src={imageUrl} alt="" class="h-48 w-full" />
   {/if}
 
   <div class="flex flex-col text-start items-start py-4 ps-4">

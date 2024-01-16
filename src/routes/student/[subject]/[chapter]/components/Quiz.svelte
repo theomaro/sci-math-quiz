@@ -1,8 +1,8 @@
 <script lang="ts">
-  import { addAnswer, answers } from "../../../../store";
+  import { addAnswer, answers } from "../../../../../store";
 
-  import Button from "../../../../components/ui/Button.svelte";
-  import Timer from "../../../../components/ui/Timer.svelte";
+  import Button from "../../../../../components/ui/Button.svelte";
+  import Timer from "../../../../../components/student/Timer.svelte";
 
   export let data: {
     chapter: Chapter;

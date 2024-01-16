@@ -1,6 +1,6 @@
 <script lang="ts">
-  import Card from "../../components/ui/Card.svelte";
-  import Tabs from "../../components/ui/Tabs.svelte";
+  import Card from "../../../components/student/Card.svelte";
+  import Tabs from "../../../components/student/Tabs.svelte";
 
   export let data;
 </script>
@@ -24,7 +24,7 @@
     {#each data.subject.chapters as chapter (chapter.id)}
       {#if chapter.questions.length > 0}
         <Card
-          url={`${data.subject.name.replaceAll(
+          url={`student/${data.subject.name.replaceAll(
             " ",
             "-"
           )}/${chapter.title.replaceAll(" ", "-")}`}

@@ -1,7 +1,6 @@
 <script lang="ts">
-  import { answers } from "../../../../store";
-
-  import Button from "../../../../components/ui/Button.svelte";
+  import Button from "../../../../../components/ui/Button.svelte";
+  import { answers } from "../../../../../store";
   import AnswerResult from "./AnswerResult.svelte";
 
   export let data: {
@@ -42,7 +41,7 @@
 <article class="flex justify-between items-center">
   <div class="text-xl text-gray-600 font-medium flex items-center gap-3">
     <div
-      class="flex items-center justify-center w-14 h-14 rounded-full border-4 border-{colorPercentage}-600"
+      class="flex items-center justify-center w-14 h-14 rounded-full border-4 border-{colorPercentage}"
     >
       <span>{totalCorrectAnswer}</span>
       <span>/{totalQuestions}</span>
@@ -50,11 +49,11 @@
 
     <div>
       <h4
-        class="text-sm text-{colorPercentage}-600 font-medium flex items-center gap-1"
+        class="text-sm text-{colorPercentage} font-medium flex items-center gap-1"
       >
         Score
         <span
-          class="inline-block w-1 h-1 mt-1 rounded-full text-lg bg-{colorPercentage}-600"
+          class="inline-block w-1 h-1 mt-1 rounded-full text-lg bg-{colorPercentage}"
         ></span>
         <span>{percent}%</span>
       </h4>
@@ -108,3 +107,41 @@
     {/each}
   </ol>
 </article>
+
+<style lang="postcss">
+  .border-gray {
+    @apply border-gray-600;
+  }
+
+  .border-emerald {
+    @apply border-emerald-600;
+  }
+
+  .border-red {
+    @apply border-red-600;
+  }
+
+  .text-gray {
+    @apply text-gray-600;
+  }
+
+  .text-emerald {
+    @apply text-emerald-600;
+  }
+
+  .text-red {
+    @apply text-red-600;
+  }
+
+  .bg-gray {
+    @apply bg-gray-600;
+  }
+
+  .bg-emerald {
+    @apply bg-emerald-600;
+  }
+
+  .bg-red {
+    @apply bg-red-600;
+  }
+</style>

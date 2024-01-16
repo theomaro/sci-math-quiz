@@ -4,13 +4,22 @@
 </script>
 
 <ul class="capitalize tracking-tight py-2 flex items-center gap-1">
-  <li>
-    <a href="/">All</a>
-  </li>
-  {#if subject}
+  {#if subject && !chapter}
+    <li>
+      <a href="/student" class="text-sky-600">All</a>
+    </li>
     <li>|</li>
     <li>
-      <a href={`/${subject}`} class="text-sky-600"
+      {subject.replaceAll("-", " ")}
+    </li>
+  {/if}
+  {#if subject && chapter}
+    <li>
+      <a href="/student" class="text-sky-600">All</a>
+    </li>
+    <li>|</li>
+    <li>
+      <a href={`/student/${subject}`} class="text-sky-600"
         >{subject.replaceAll("-", " ")}</a
       >
     </li>
