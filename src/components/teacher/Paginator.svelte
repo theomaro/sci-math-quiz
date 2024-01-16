@@ -1,13 +1,13 @@
 <script lang="ts"></script>
 
-<article>
+<article class="mx-auto md:mx-0">
   <ul class="flex space-x-1.5">
     <li>
-      <button class="font-bold text-sm px-2.5 py-1 rounded">Previous</button>
+      <button class="font-bold text-sm pe-2.5 py-1 rounded">Prev</button>
     </li>
     <li>
       <button
-        class="font-bold text-sm px-2.5 py-1 rounded bg-slate-600 text-white"
+        class="font-bold text-sm px-2.5 py-1 rounded bg-slate-700 text-white"
         >1</button
       >
     </li>
@@ -24,7 +24,7 @@
       <button class="font-bold text-sm px-2.5 py-1 rounded">5</button>
     </li>
     <li>
-      <button class="font-bold text-sm px-2.5 py-1 rounded">Next</button>
+      <button class="font-bold text-sm ps-2.5 py-1 rounded">Next</button>
     </li>
   </ul>
 </article>

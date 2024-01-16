@@ -1,5 +1,5 @@
 <form class="text-sm flex items-center space-x-3 text-slate-500">
-  <span>Show</span>
+  <span class="hidden md:block">Show</span>
   <select
     name=""
     id=""
@@ -11,5 +11,5 @@
     <option value="">75</option>
     <option value="">100</option>
   </select>
-  <span>entries</span>
+  <span class="hidden md:block">entries</span>
 </form>

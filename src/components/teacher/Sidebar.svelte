@@ -1,11 +1,7 @@
 <script lang="ts">
   import { goto } from "$app/navigation";
-  import { page } from "$app/stores";
 
-  let pageTitle: string = "";
-  page.subscribe((x) => {
-    pageTitle = x.url.pathname.replace("teacher", "").replaceAll("/", "");
-  });
+  export let pageTitle: string = "";
 </script>
 
 <aside class="col-span-2 shadow-lg rounded-s text-sm pt-6 min-h-[90vh]">
@@ -15,7 +11,7 @@
         on:click={() => goto("/teacher")}
         class="flex items-center justify-center lg:justify-start space-x-4 w-full px-6 py-3 border-b text-gray-600 text-lg {pageTitle ===
         ''
-          ? 'bg-emerald-700 text-white'
+          ? 'bg-slate-700 text-white'
           : ''}"
       >
         <i
@@ -49,7 +45,7 @@
         on:click={() => goto("/teacher/exams")}
         class="flex items-center justify-center lg:justify-start space-x-4 w-full px-6 py-3 border-b text-gray-600 text-lg {pageTitle ===
         'exams'
-          ? 'bg-cyan-600 text-white'
+          ? 'bg-slate-700 text-white'
           : ''}"
       >
         <i
@@ -66,7 +62,7 @@
         on:click={() => goto("/teacher/questions")}
         class="flex items-center justify-center lg:justify-start space-x-4 w-full px-6 py-3 border-b text-gray-600 text-lg {pageTitle ===
         'questions'
-          ? 'bg-sky-600 text-white'
+          ? 'bg-slate-700 text-white'
           : ''}"
       >
         <i
