@@ -9,7 +9,7 @@
   />
 </svelte:head>
 
-<div class="grid grid-cols-12 max-w-7xl px-6 mx-auto">
+<div class="grid grid-cols-12 max-w-7xl xl:px-6 mx-auto">
   <Sidebar />
 
   <main class="col-span-10 shadow-lg rounded-e p-6 bg-white">
