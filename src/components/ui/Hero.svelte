@@ -32,8 +32,8 @@
     >
       <button
         on:click={() => goto("/student")}
-        class="font-bold text-xl text-emerald-700 py-4 px-12 shadow rounded border border-emerald-600"
-        >I'm a 'Student</button
+        class="font-bold text-xl text-emerald-700 py-4 px-8 shadow rounded border border-emerald-600"
+        >I'm a Student</button
       >
       <span>Or</span>
       <button
