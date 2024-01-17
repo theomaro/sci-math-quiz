@@ -27,11 +27,13 @@
       and skill test.
     </p>
 
-    <div class="space-x-5 lg:ms-4 flex justify-center items-center mt-8 lg:mt-12">
+    <div
+      class="space-x-5 lg:ms-4 flex justify-center items-center mt-8 lg:mt-12"
+    >
       <button
         on:click={() => goto("/student")}
         class="font-bold text-xl text-emerald-700 py-4 px-12 shadow rounded border border-emerald-600"
-        >Student</button
+        >I'm a 'Student</button
       >
       <span>Or</span>
       <button

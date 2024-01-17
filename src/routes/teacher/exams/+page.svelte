@@ -45,7 +45,7 @@
         <tbody>
           <tr class="odd:bg-slate-100 text-slate-700">
             <td class="p-2 text-sm">Coordinate Geometry</td>
-            <td class="p-2 text-center md:text-sm">IV</td>
+            <td class="p-2 text-center md:text-start text-sm">IV</td>
             <td class="p-2 text-sm">033</td>
             <td class="p-2 text-sm">9</td>
             <td class="p-2 text-sm">55</td>
@@ -64,7 +64,7 @@
           </tr>
           <tr class="odd:bg-slate-100 text-slate-700">
             <td class="p-2 text-sm">Linear programming</td>
-            <td class="p-2 text-center md:text-sm">I</td>
+            <td class="p-2 text-center md:text-start text-sm">I</td>
             <td class="p-2 text-sm">041</td>
             <td class="p-2 text-sm">15</td>
             <td class="p-2 text-sm">10</td>
@@ -83,7 +83,7 @@
           </tr>
           <tr class="odd:bg-slate-100 text-slate-700">
             <td class="p-2 text-sm">Circle</td>
-            <td class="p-2 text-center md:text-sm">II</td>
+            <td class="p-2 text-center md:text-start text-sm">II</td>
             <td class="p-2 text-sm">041</td>
             <td class="p-2 text-sm">20</td>
             <td class="p-2 text-sm">100</td>
@@ -102,7 +102,7 @@
           </tr>
           <tr class="odd:bg-slate-100 text-slate-700">
             <td class="p-2 text-sm">Quadratic equation</td>
-            <td class="p-2 text-center md:text-sm">III</td>
+            <td class="p-2 text-center md:text-start text-sm">III</td>
             <td class="p-2 text-sm">033</td>
             <td class="p-2 text-sm">16</td>
             <td class="p-2 text-sm">55</td>
@@ -121,7 +121,7 @@
           </tr>
           <tr class="odd:bg-slate-100 text-slate-700">
             <td class="p-2 text-sm">Coordinate Geometry</td>
-            <td class="p-2 text-center md:text-sm">IV</td>
+            <td class="p-2 text-center md:text-start text-sm">IV</td>
             <td class="p-2 text-sm">033</td>
             <td class="p-2 text-sm">9</td>
             <td class="p-2 text-sm">55</td>
@@ -140,7 +140,7 @@
           </tr>
           <tr class="odd:bg-slate-100 text-slate-700">
             <td class="p-2 text-sm">Functions</td>
-            <td class="p-2 text-center md:text-sm">III</td>
+            <td class="p-2 text-center md:text-start text-sm">III</td>
             <td class="p-2 text-sm">041</td>
             <td class="p-2 text-sm">8</td>
             <td class="p-2 text-sm">55</td>
@@ -159,7 +159,7 @@
           </tr>
           <tr class="odd:bg-slate-100 text-slate-700">
             <td class="p-2 text-sm">Whole numbers</td>
-            <td class="p-2 text-center md:text-sm">IV</td>
+            <td class="p-2 text-center md:text-start text-sm">IV</td>
             <td class="p-2 text-sm">033</td>
             <td class="p-2 text-sm">2</td>
             <td class="p-2 text-sm">55</td>
@@ -178,7 +178,7 @@
           </tr>
           <tr class="odd:bg-slate-100 text-slate-700">
             <td class="p-2 text-sm">LCM</td>
-            <td class="p-2 text-center md:text-sm">I</td>
+            <td class="p-2 text-center md:text-start text-sm">I</td>
             <td class="p-2 text-sm">041</td>
             <td class="p-2 text-sm">11</td>
             <td class="p-2 text-sm">55</td>
@@ -197,7 +197,7 @@
           </tr>
           <tr class="odd:bg-slate-100 text-slate-700">
             <td class="p-2 text-sm">Algebra</td>
-            <td class="p-2 text-center md:text-sm">II</td>
+            <td class="p-2 text-center md:text-start text-sm">II</td>
             <td class="p-2 text-sm">041</td>
             <td class="p-2 text-sm">17</td>
             <td class="p-2 text-sm">55</td>
