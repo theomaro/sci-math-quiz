@@ -12,20 +12,26 @@
       </p>
     </div>
 
-    <form action="" class="flex flex-col gap-5">
+    <form
+      method="post"
+      action={`/${pageTitle}?/register`}
+      class="flex flex-col gap-5"
+    >
       <div class="flex flex-col gap-3 md:flex-row md:gap-8">
         <div class="flex flex-col gap-1 text-slate-800">
-          <label for="" class="text-sm">First name:</label>
+          <label for="firstname" class="text-sm">First name:</label>
           <input
             type="text"
+            name="firstname"
             class="py-1 px-3 w-80 text-lg border border-slate-400 rounded-md outline-none"
           />
         </div>
 
         <div class="flex flex-col gap-1 text-slate-800">
-          <label for="" class="text-sm">Last name:</label>
+          <label for="lastname" class="text-sm">Last name:</label>
           <input
             type="text"
+            name="lastname"
             class="py-1 px-3 w-80 text-lg border border-slate-400 rounded-md outline-none"
           />
         </div>
@@ -33,17 +39,19 @@
 
       <div class="flex flex-col gap-3 md:flex-row md:gap-8">
         <div class="flex flex-col gap-1 text-slate-800">
-          <label for="" class="text-sm">Email:</label>
+          <label for="email" class="text-sm">Email:</label>
           <input
             type="email"
+            name="email"
             class="py-1 px-3 w-80 text-lg border border-slate-400 rounded-md outline-none"
           />
         </div>
 
         <div class="flex flex-col gap-1 text-slate-800">
-          <label for="" class="text-sm">Username:</label>
+          <label for="username" class="text-sm">Username:</label>
           <input
             type="text"
+            name="username"
             class="py-1 px-3 w-80 text-lg border border-slate-400 rounded-md outline-none"
           />
         </div>
@@ -51,17 +59,20 @@
 
       <div class="flex flex-col gap-3 md:flex-row md:gap-8">
         <div class="flex flex-col gap-1 text-slate-800">
-          <label for="" class="text-sm">Password:</label>
+          <label for="password" class="text-sm">Password:</label>
           <input
             type="password"
+            name="password"
             class="py-1 px-3 w-80 text-lg border border-slate-400 rounded-md outline-none"
           />
         </div>
 
         <div class="flex flex-col gap-1 text-slate-800">
-          <label for="" class="text-sm">Confirm Password:</label>
+          <label for="confirm-password" class="text-sm">Confirm Password:</label
+          >
           <input
             type="password"
+            name="confirm-password"
             class="py-1 px-3 w-80 text-lg border border-slate-400 rounded-md outline-none"
           />
         </div>

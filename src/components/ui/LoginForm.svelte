@@ -12,19 +12,25 @@
       </p>
     </div>
 
-    <form action="" class="flex flex-col gap-5">
+    <form
+      method="post"
+      action={`/${pageTitle}?/login`}
+      class="flex flex-col gap-5"
+    >
       <div class="flex flex-col gap-1 text-slate-800">
-        <label for="" class="text-sm">Username:</label>
+        <label for="username" class="text-sm">Username:</label>
         <input
           type="text"
+          name="username"
           class="py-1 px-3 w-80 text-lg border border-slate-400 rounded-md outline-none"
         />
       </div>
 
       <div class="flex flex-col gap-1 text-slate-800">
-        <label for="" class="text-sm">Enter Password:</label>
+        <label for="password" class="text-sm">Enter Password:</label>
         <input
           type="password"
+          name="password"
           class="py-1 px-3 w-80 text-lg border border-slate-400 rounded-md outline-none"
         />
       </div>

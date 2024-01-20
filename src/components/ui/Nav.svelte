@@ -43,7 +43,7 @@
   bind:this={nav}
   class="group h-14 flex justify-between items-center px-4 max-w-7xl mx-auto"
 >
-  <div class="text-emerald-800 font-bold p-2 flex items-center">
+  <div class="text-emerald-800 font-bold py-2 flex items-center">
     <img src={logoUrl} alt="" class="object-cover w-5" />&nbsp;Sci<span
       class="text-stone-700 underline font-medium">Math</span
     >Q
@@ -53,7 +53,7 @@
     class="hidden group-[.show]:block px-6 pb-8 pt-7 shadow-md md:shadow-none text-sm absolute top-full right-0 left-0 z-10 md:p-0 md:static space-y-4 md:space-y-0 bg-white border-t md:border-t-0 md:bg-transparent text-start md:flex md:flex-1 md:ms-16"
   >
     <ul
-      class="flex flex-col space-y-3 md:space-y-0 md:flex-row md:space-x-8 md:ms-auto xl:mx-auto"
+      class="flex flex-col space-y-3 md:space-y-0 md:flex-row md:space-x-8 md:ms-auto"
     >
       <li>
         <button on:click={removeNavigation} class="w-full text-start">

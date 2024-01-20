@@ -5,13 +5,13 @@
 </script>
 
 <div
-  class="px-4 py-12 flex flex-col items-center justify-center gap-14 bg-white md:flex-row md:justify-evenly md:py-20 lg:py-28 mb-8"
+  class="px-4 py-12 flex flex-col items-center justify-center gap-14 md:px-0 md:flex-row md:justify-evenly md:py-20 lg:py-28 mb-8"
 >
   <article class="p-2 w-full max-w-sm lg:max-w-md md:order-2">
     <img src={heroImg} alt="" />
   </article>
 
-  <article class="text-center md:text-start p-2">
+  <article class="text-center md:text-start py-2">
     <h1
       class="text-2xl text-emerald-800 opacity-75 font-bold mb-3 sm:text-4xl sm:mb-4 lg:text-5xl lg:mb-6"
     >

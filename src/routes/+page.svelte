@@ -6,4 +6,6 @@
   <title>SciMathQ</title>
 </svelte:head>
 
-<Hero />
+<div class="max-w-7xl mx-auto">
+  <Hero />
+</div>
