@@ -28,17 +28,17 @@
     </p>
 
     <div
-      class="space-x-5 lg:ms-4 flex justify-center items-center mt-8 lg:mt-12"
+      class="space-x-5 lg:ms-4 flex justify-center items-center mt-8 md:justify-start lg:mt-12"
     >
       <button
-        on:click={() => goto("/student")}
-        class="font-bold text-xl text-emerald-700 py-4 px-6 sm:px-8 md:px-12 shadow rounded border border-emerald-600"
-        >I'm a Student</button
+        on:click={() => goto("/student/login")}
+        class="text-base text-emerald-700 py-2 px-4 shadow rounded border border-emerald-600"
+        >Student</button
       >
       <span>Or</span>
       <button
-        on:click={() => goto("/teacher")}
-        class="text-lg text-amber-800 py-3 px-8 shadow rounded border border-amber-700"
+        on:click={() => goto("/teacher/login")}
+        class="text-base text-amber-800 py-2 px-6 shadow rounded border border-amber-700"
         >Teacher</button
       >
     </div>
