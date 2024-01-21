@@ -23,5 +23,12 @@
     "uuid": "^9.0.1",
     "vite": "^4.4.2"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "appwrite": "^13.0.1",
+    "flowbite": "^2.2.1",
+    "flowbite-svelte": "^0.44.22",
+    "tailwind-merge": "^2.2.0"
+  }
 }
