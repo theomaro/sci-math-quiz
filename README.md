@@ -25,7 +25,7 @@ cd sci-math-quiz
 npm install
 ```
 
-- Starta development server
+- Start a development server
 
 ```npm
 npm run dev
