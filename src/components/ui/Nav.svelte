@@ -81,7 +81,7 @@
             <li>
               <button on:click={removeNavigation} class="w-full text-start">
                 <Link
-                  href="/student/login"
+                  href="/student"
                   text="student"
                   styles="md:border-b border-b-stone-300 md:p-3"
                 />
@@ -90,7 +90,7 @@
             <li>
               <button on:click={removeNavigation} class="w-full text-start">
                 <Link
-                  href="/teacher/login"
+                  href="/teacher"
                   text="teacher"
                   styles="md:border-b border-b-stone-300 md:p-3"
                 />
