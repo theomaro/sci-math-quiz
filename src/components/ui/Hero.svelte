@@ -31,13 +31,13 @@
       class="space-x-5 lg:ms-4 flex justify-center items-center mt-8 md:justify-start lg:mt-12"
     >
       <button
-        on:click={() => goto("/student/login")}
+        on:click={() => goto("/student")}
         class="text-base text-emerald-700 py-2 px-4 shadow rounded border border-emerald-600"
         >Student</button
       >
       <span>Or</span>
       <button
-        on:click={() => goto("/teacher/login")}
+        on:click={() => goto("/teacher")}
         class="text-base text-amber-800 py-2 px-6 shadow rounded border border-amber-700"
         >Teacher</button
       >
