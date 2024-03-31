@@ -25,6 +25,18 @@ cd sci-math-quiz
 npm install
 ```
 
+- Set development enviroment variables
+
+```
+$ touch .env && echo PUBLIC_API_URL=http://localhost:3000/quizzes
+```
+
+- Start a json server
+
+```npm
+npm run json-server
+```
+
 - Start a development server
 
 ```npm
